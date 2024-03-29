@@ -1,0 +1,12 @@
+/* Fade in Section Banner */
+@keyframes fadein_banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.banner {
+  animation-name: fadein_banner;
+}/*# sourceMappingURL=theme.css.map */
