@@ -2,6 +2,25 @@
 @keyframes fadein_banner {
   0% {
     opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein_main {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein_flowers {
+  0% {
+    opacity: 1;
+    transform: translateY(40%);
   }
   100% {
     opacity: 1;
@@ -9,4 +28,23 @@
 }
 .banner {
   animation-name: fadein_banner;
+  animation-duration: 2s;
+}
+
+.banner > img,
+#story {
+  animation-name: fadein_main;
+  animation-duration: 2s;
+}
+
+h2::before,
+h2::after,
+.story__article::before,
+.story__article::after,
+#primary h2 #characters,
+#place,
+#studio,
+#colophon {
+  animation-name: fadein_flowers;
+  animation-duration: 2s;
 }/*# sourceMappingURL=theme.css.map */

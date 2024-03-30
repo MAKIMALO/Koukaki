@@ -2,12 +2,12 @@
     add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
     function theme_enqueue_styles() {
         wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-        wp_enqueue_style( 'koukaki-style', get_stylesheet_directory_uri() . 'sass/theme.css', array(), 
-        filemtime(get_stylesheet_directory() . 'sass/theme.css') );
+        wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/sass/theme.css', array(), 
+        filemtime(get_stylesheet_directory() . '/sass/theme.css') );
     }
 ?>
 
-
+<?php
 // Get customizer options form parent theme
 if ( get_stylesheet() !== get_template() ) {
     add_filter( 'pre_update_option_theme_mods_' . get_stylesheet(), function ( $value, $old_value ) {
@@ -18,3 +18,4 @@ if ( get_stylesheet() !== get_template() ) {
         return get_option( 'theme_mods_' . get_template(), $default );
     } );
 }
+?>
