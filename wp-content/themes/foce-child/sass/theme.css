@@ -11,20 +11,35 @@
 @keyframes fadein_main {
   0% {
     opacity: 0;
-    transform: translateY(20%);
+    transform: translateY(30%);
   }
   100% {
     opacity: 1;
   }
 }
 .banner {
-  animation-name: fadein_banner;
-  animation-duration: 2s;
+  animation: fadein_banner 3s;
 }
 
-.site-main,
 .banner > img,
+.story,
+#place,
+#studio,
 #colophon {
-  animation-name: fadein_main;
-  animation-duration: 2s;
+  animation: fadein_main 3s;
+}
+
+/* Rotation des fleurs */
+@keyframes rotate_flowers {
+  from {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+::after,
+#studio h2::before,
+.site-footer::before {
+  animation: rotate_flowers 20s normal linear infinite;
 }/*# sourceMappingURL=theme.css.map */
