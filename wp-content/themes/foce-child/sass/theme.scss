@@ -52,14 +52,8 @@ h2::after,
 }
 
 /* Animation des titres */
-h2 span,
-h3 span {
-    opacity: 1;
-    transform: translateY(40%);
-    transition: 2s linear;
+.title_animation {
+    transform: opacity 4s ease, transform 4s ease;
 }
 
-.title_hidden {
-    opacity: 0;
-}
 
