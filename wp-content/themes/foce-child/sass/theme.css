@@ -48,16 +48,14 @@ h2::after,
   line-height: 0;
 }
 
-/* Animation des titres
-.scroll_animation {
-    opacity: 0;
-    transform: translateY(40%);
-    transition: 2s linear;
+/* Animation des titres */
+h2 span,
+h3 span {
+  opacity: 1;
+  transform: translateY(40%);
+  transition: 2s linear;
 }
 
-.title_animate {
-    opacity: 1;
-    transform: translateY(0%);
-}
-
-*//*# sourceMappingURL=theme.css.map */
+.title_hidden {
+  opacity: 0;
+}/*# sourceMappingURL=theme.css.map */

@@ -1,15 +1,21 @@
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        const animation = entry.target.querySelector(".scroll_animation");
-
-        if (entry.isIntersecting) {
-            animation.classList.add("title_animate");
+let observer = new IntersectionObserver(observables => {
+    for(let observable of observables){
+        if(observable.intersectionRatio > 0.5){
+            observable.target.classList.remove("title_hidden");
         } else {
-            animation.classList.remove("title_animate");
+            observable.target.classList.add("title_hidden");
         }
-    })
+    }
+}, {
+    threshold: [0.5]
 });
 
-observer.observe(document.querySelector(".site-main"));
+const titles_h2 = document.querySelectorAll("h2 span");
+const titles_h3 = document.querySelectorAll("h3 span");
 
-console.log();
+for(let title_h2 of titles_h2) {
+    title_h2.classList.add("title_hidden");
+    observer.observe(title_h2)
+}
+
+
