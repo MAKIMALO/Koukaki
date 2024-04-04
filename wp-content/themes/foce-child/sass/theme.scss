@@ -27,6 +27,7 @@
 .story,
 #place,
 #studio,
+#oscars,
 #colophon {
     animation: fadein_main 3s;
 }
@@ -109,4 +110,27 @@ h2::after,
 .site-footer::after {
 	display: none;
 }
+
+/* Video background banner */
+.banner {
+    background-image: url("./assets/images/banner.png");
+    min-height: 806px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-top: -10%;
+      width: 50%;
+    }
+  }
+  
+#background-video {
+    height: 806px;
+    width: 1440px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    display: none;
+    }
 

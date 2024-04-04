@@ -4,14 +4,24 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
+
         <section class="banner">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+            <?php
+                $background_video = get_theme_file_uri("assets/video/background_video.mp4");
+            ?>
+            <video id="background-video" autoplay loop muted src="<?php echo $background_video; ?>">
+            </video>
+
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">
         </section>
+
         <section id="#story" class="story">
             <h2 class="title_animation"><span>L'histoire</span></h2>
+
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
             </article>
+
             <?php
             $args = array(
                 'post_type' => 'characters',
@@ -22,6 +32,7 @@ get_header();
             );
             $characters_query = new WP_Query($args);
             ?>
+
             <article id="characters">
                 <div class="main-character">
                     <h3 class="title_animation"><span>Les personnages</span></h3>
@@ -48,6 +59,7 @@ get_header();
                     ?>
                 </div>
             </article>
+
             <article id="place">
                 <div>
                     <h3 class="title_animation"><span>Le Lieu</span></h3>
@@ -55,8 +67,8 @@ get_header();
                 </div>
 
             </article>
-        </section>
 
+        </section>
 
         <section id="studio">
             <h2 class="title_animation"><span>Studio Koukaki</span></h2>
@@ -66,7 +78,7 @@ get_header();
             </div>
         </section>
 
-        <?php get_template_part( 'oscars' ); ?>
+        <?php get_template_part( 'template-parts/oscars' ); ?>
         
     </main><!-- #main -->
 
