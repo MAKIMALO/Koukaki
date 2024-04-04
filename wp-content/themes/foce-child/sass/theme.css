@@ -41,8 +41,8 @@
 .story__article::after,
 h2::after,
 #studio h2::before,
-.site-footer::before,
-.site-footer::after,
+.image_sunflower,
+.image_orchid,
 .site-footer ul::after {
   animation: rotate_flowers 20s linear infinite;
   line-height: 0;
@@ -51,4 +51,57 @@ h2::after,
 /* Animation des titres */
 .title_animation {
   transform: opacity 4s ease, transform 4s ease;
+}
+
+/* Section Oscars */
+#oscars {
+  width: 100%;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+}
+#oscars .image_sunflower {
+  position: absolute;
+  left: 160px;
+  top: 3400px;
+}
+#oscars .image_orchid {
+  position: absolute;
+  right: -40px;
+  top: 3350px;
+}
+#oscars .text_nomination {
+  width: 65%;
+}
+#oscars .text_nomination p {
+  font-weight: 700;
+  font-family: "Quicksand";
+  font-size: 40px;
+  color: #FFF5E9;
+  width: 643px;
+  height: 187px;
+  line-height: 52.5px;
+  letter-spacing: -2%;
+  position: relative;
+  left: 245px;
+  top: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#oscars .text_nomination .background_image_orange {
+  position: absolute;
+  left: 220px;
+}
+#oscars .logo_nomination img {
+  position: absolute;
+  top: 3540px;
+}
+
+.image_sunflower,
+.image_orchid {
+  position: absolute;
+}
+
+.site-footer::before,
+.site-footer::after {
+  display: none;
 }/*# sourceMappingURL=theme.css.map */
