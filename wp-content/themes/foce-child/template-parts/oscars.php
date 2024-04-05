@@ -8,12 +8,14 @@
 </head>
 <body>
     <section id="oscars">
-        <?php
-        $image_sunflower = get_theme_file_uri("assets/images/sunflower.png");
-        $image_orchid = get_theme_file_uri("assets/images/orchid.png");
-        ?>
-        <img class="image_sunflower" src="<?php echo $image_sunflower; ?>" alt="Image marguerite">
-        <img class="image_orchid" src="<?php echo $image_orchid; ?>" alt="Image orchidée">
+        <div class="oscars_flowers">
+            <?php
+                $image_sunflower = get_theme_file_uri("assets/images/sunflower.png");
+                $image_orchid = get_theme_file_uri("assets/images/orchid.png");
+            ?>
+            <img class="image_sunflower" src="<?php echo $image_sunflower; ?>" alt="Image marguerite">
+            <img class="image_orchid" src="<?php echo $image_orchid; ?>" alt="Image orchidée">
+        </div>
         <div class="text_nomination">
             <?php
             $background_image_orange = get_theme_file_uri("assets/images/background_image_orange.png");

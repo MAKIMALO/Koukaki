@@ -10,11 +10,11 @@ get_header();
                 <?php
                     $background_video = get_theme_file_uri("assets/video/background_video.mp4");
                 ?>
-                <video id="background_video" autoplay loop muted poster="<?php echo get_theme_file_uri("assets/images/banner.png")?>">
+                <video class="background_video" autoplay loop muted poster="<?php echo get_theme_file_uri("assets/images/banner.png")?>">
                     <source src="<?php echo $background_video; ?>" type="video/mp4">
                 </video>
             </div>
-            <div class="bloc_img_logo">
+            <div class="bloc_img_logo" style="position:sticky">
                 <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">  
             </div>
         </section>
@@ -82,8 +82,12 @@ get_header();
             </div>
         </section>
 
+        <section id="oscars">           
+
         <?php get_template_part( 'template-parts/oscars' ); ?>
-        
+
+        </section>
+
     </main><!-- #main -->
 
 <?php

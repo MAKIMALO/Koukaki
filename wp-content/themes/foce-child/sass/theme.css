@@ -57,19 +57,9 @@ h2::after,
 /* Section Oscars */
 #oscars {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
-}
-#oscars .image_sunflower {
-  position: absolute;
-  left: 160px;
-  top: 3400px;
-}
-#oscars .image_orchid {
-  position: absolute;
-  right: -40px;
-  top: 3350px;
 }
 #oscars .text_nomination {
   width: 65%;
@@ -97,9 +87,15 @@ h2::after,
   top: 3540px;
 }
 
-.image_sunflower,
-.image_orchid {
+.oscars_flowers .image_sunflower {
   position: absolute;
+  left: 160px;
+  top: 3400px;
+}
+.oscars_flowers .image_orchid {
+  position: absolute;
+  right: -40px;
+  top: 3350px;
 }
 
 .site-footer::before,
