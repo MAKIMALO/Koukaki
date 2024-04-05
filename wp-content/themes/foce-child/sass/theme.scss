@@ -23,7 +23,7 @@
     animation: fadein_banner 3s;
 }
 
-.banner > img,
+.banner .img_logo,
 .story,
 #place,
 #studio,
@@ -113,24 +113,39 @@ h2::after,
 
 /* Video background banner */
 .banner {
-    background-image: url("./assets/images/banner.png");
-    min-height: 806px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-      margin-top: -10%;
-      width: 50%;
-    }
-  }
-  
-#background-video {
-    height: 806px;
-    width: 1440px;
-    object-fit: cover;
-    position: absolute;
     z-index: -1;
-    display: none;
+    #background-video {
+        height: 806px;
+        width: 1440px;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+        }
+    .img_logo {
+        z-index: 1;
     }
+}
+
+/* Effet de flottement sur le titre principal */
+@keyframes float_title {
+    0% {
+        transform: translate(2%, 2%);
+    }
+    25% {
+        transform: translate(-1%, -1%);
+    }
+    50% {
+        transform: translate(2%, -2%);
+    }
+    75% {
+        transform: translate(-1%, -1%);
+    }
+    100% {
+        transform: translate(2%, 2%);
+    }
+}
+
+.banner .img_logo {
+    animation: float_title ease-in-out 3s infinite;
+}
 

@@ -9,10 +9,10 @@ get_header();
             <?php
                 $background_video = get_theme_file_uri("assets/video/background_video.mp4");
             ?>
-            <video id="background-video" autoplay loop muted src="<?php echo $background_video; ?>">
+            <video id="background-video" autoplay loop muted poster="<?php echo get_theme_file_uri("assets/images/banner.png")?>">
+                <source src="<?php echo $background_video; ?>" type="video/mp4">
             </video>
-
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">
+            <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">
         </section>
 
         <section id="#story" class="story">
