@@ -22,5 +22,10 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript" src="skrollr.min.js"></script>
+<script type="text/javascript">
+var s = skrollr.init();
+</script>
+
 </body>
 </html>

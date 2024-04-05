@@ -6,13 +6,17 @@ get_header();
     <main id="primary" class="site-main">
 
         <section class="banner">
-            <?php
-                $background_video = get_theme_file_uri("assets/video/background_video.mp4");
-            ?>
-            <video id="background-video" autoplay loop muted poster="<?php echo get_theme_file_uri("assets/images/banner.png")?>">
-                <source src="<?php echo $background_video; ?>" type="video/mp4">
-            </video>
-            <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">
+            <div class="bloc_video">
+                <?php
+                    $background_video = get_theme_file_uri("assets/video/background_video.mp4");
+                ?>
+                <video id="background_video" autoplay loop muted poster="<?php echo get_theme_file_uri("assets/images/banner.png")?>">
+                    <source src="<?php echo $background_video; ?>" type="video/mp4">
+                </video>
+            </div>
+            <div class="bloc_img_logo">
+                <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">  
+            </div>
         </section>
 
         <section id="#story" class="story">

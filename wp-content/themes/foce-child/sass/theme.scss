@@ -113,18 +113,38 @@ h2::after,
 
 /* Video background banner */
 .banner {
+    min-height: 806px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: -1;
-    #background-video {
-        height: 806px;
-        width: 1440px;
-        object-fit: cover;
-        position: absolute;
-        z-index: 0;
-        }
-    .img_logo {
+}
+
+.bloc_img_logo {
+    min-height: 806px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > .img_logo {
+        margin-top: -10%;
+        width: 100%;
+        position: relative;
         z-index: 1;
     }
 }
+
+.bloc_video {
+    height: 806px;
+    width: 1440px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
 
 /* Effet de flottement sur le titre principal */
 @keyframes float_title {
@@ -145,7 +165,7 @@ h2::after,
     }
 }
 
-.banner .img_logo {
+.bloc_img_logo {
     animation: float_title ease-in-out 3s infinite;
 }
 

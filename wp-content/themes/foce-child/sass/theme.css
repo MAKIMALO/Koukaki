@@ -109,18 +109,35 @@ h2::after,
 
 /* Video background banner */
 .banner {
+  min-height: 806px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: -1;
 }
-.banner #background-video {
+
+.bloc_img_logo {
+  min-height: 806px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloc_img_logo > .img_logo {
+  margin-top: -10%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.bloc_video {
   height: 806px;
   width: 1440px;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
   z-index: 0;
-}
-.banner .img_logo {
-  z-index: 1;
 }
 
 /* Effet de flottement sur le titre principal */
@@ -141,6 +158,6 @@ h2::after,
     transform: translate(2%, 2%);
   }
 }
-.banner .img_logo {
+.bloc_img_logo {
   animation: float_title ease-in-out 3s infinite;
 }/*# sourceMappingURL=theme.css.map */
