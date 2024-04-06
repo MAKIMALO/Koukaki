@@ -27,7 +27,6 @@
 .story,
 #place,
 #studio,
-#oscars,
 #colophon {
     animation: fadein_main 3s;
 }
@@ -110,7 +109,6 @@ h2::after,
 
 /* Video background banner */
 .banner {
-    min-height: 806px;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -119,9 +117,7 @@ h2::after,
 }
 
 .bloc_img_logo {
-    min-height: 806px;
-    height: 520px;
-    background-size: cover;
+    height: 523px;
     display: flex;
     justify-content: center;
     align-items: center;

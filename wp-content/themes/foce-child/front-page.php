@@ -7,7 +7,7 @@ get_header();
 
         <section class="banner">
             <div class="bloc_video"
-            data-0="transform:translateY(0px)" data-200="transform:translateY(-170px)">
+            data-0="transform:translateY(0px)" data-200="transform:translateY(-150px);">
                 <?php
                     $background_video = get_theme_file_uri("assets/video/background_video.mp4");
                 ?>
