@@ -115,11 +115,12 @@ h2::after,
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    background-image: none;
 }
 
 .bloc_img_logo {
     min-height: 806px;
+    height: 520px;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -128,7 +129,7 @@ h2::after,
         margin-top: -10%;
         width: 100%;
         position: relative;
-        z-index: 1;
+        z-index: 0;
     }
 }
 
@@ -137,7 +138,12 @@ h2::after,
     width: 1440px;
     object-fit: cover;
     position: absolute;
-    z-index: 0;
+}
+
+.background_video {
+    height: 806px;
+    position: absolute;
+    z-index: 1;
 }
 
 /* Effet de flottement sur le titre principal */
