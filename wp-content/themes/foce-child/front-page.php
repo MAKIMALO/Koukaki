@@ -6,10 +6,13 @@ get_header();
     <main id="primary" class="site-main">
 
         <section class="banner">
-            <div class="bloc_video" 
+            <div class="bloc_video"
             data-0="transform:translateY(0px)" data-200="transform:translateY(-170px)">
-                <video class="background_video" autoplay loop poster="<?php echo get_theme_file_uri("assets/images/banner.png"); ?>">
-                    <source src="<?php echo get_theme_file_uri("assets/video/background_video.mp4"); ?>" type="video/mp4">
+                <?php
+                    $background_video = get_theme_file_uri("assets/video/background_video.mp4");
+                ?>
+                <video class="background_video" autoplay loop muted poster="<?php echo get_theme_file_uri("assets/images/banner.png")?>">
+                    <source src="<?php echo $background_video; ?>" type="video/mp4">
                 </video>
             </div>
             <div class="bloc_img_logo" style="position:sticky">

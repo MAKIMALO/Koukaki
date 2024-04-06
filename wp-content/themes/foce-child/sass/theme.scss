@@ -129,7 +129,7 @@ h2::after,
         margin-top: -10%;
         width: 100%;
         position: relative;
-        z-index: 0;
+        z-index: 1;
     }
 }
 
@@ -138,12 +138,14 @@ h2::after,
     width: 1440px;
     object-fit: cover;
     position: absolute;
+    z-index: -1;
 }
 
 .background_video {
     height: 806px;
-    position: absolute;
-    z-index: 1;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
 }
 
 /* Effet de flottement sur le titre principal */
