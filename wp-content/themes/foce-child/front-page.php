@@ -66,11 +66,19 @@ get_header();
             </article>
 
             <article id="place">
-                <div>
-                    <h3 class="title_animation"><span>Le Lieu</span></h3>
-                    <p><?php echo get_theme_mod('place'); ?></p>
-                </div>
-
+                <?php
+                    $background_img_place = get_stylesheet_directory_uri() . "/assets/images/Studio_Koukaki-image_place.png";
+                    $background_img_nuage1 = get_stylesheet_directory_uri() . "/assets/images/little_cloud.png";
+                    $background_img_nuage2 = get_stylesheet_directory_uri() . "/assets/images/big_cloud.png";
+                ?>
+                <img class="background_img_place" src="<?php echo $background_img_place ?>" type="image" alt="Image de fond colorée">
+                <div class="place_nuages">
+                    <div class="place_text">
+                        <h3 class="title_animation"><span>Le Lieu</span></h3>
+                        <p><?php echo get_theme_mod('place'); ?></p>
+                    </div>
+                    <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages">
+                    <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages">
             </article>
 
         </section>

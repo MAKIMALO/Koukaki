@@ -167,3 +167,54 @@ h2::after,
     animation: float_title ease-in-out 3s infinite;
 }
 
+/* Effet de déplacement des nuages */
+.story {
+    #place {
+        background-image: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+        .background_img_place {
+            display: flex;
+            width: 100%;
+            min-height: 699px;
+            background-size: cover;
+            position: absolute;
+            z-index: -1;
+        }
+        .place_nuages {
+            display: flex;
+            max-width: 1440px !important;
+            flex-direction: row !important;
+            .place_text {
+                position: absolute;
+                z-index: 1;
+                max-width: 580px;
+                margin-left: 0px !important;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 6em;
+            }
+            .little_cloud {
+                position: absolute;
+                width: 142px;
+                height: 55px;
+                left: 793px;
+                top: 239px;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                z-index: 1;
+            }
+            .big_cloud {
+                position: absolute;
+                width: 316px;
+                height: 122px;
+                left: 1031px;
+                top: 56px;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                z-index: 1;
+            }
+        }
+}
