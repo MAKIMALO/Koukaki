@@ -1,3 +1,6 @@
+body {
+    height: auto !important;
+}
 /* Fade in Section Banner */
 @keyframes fadein_banner {
     0% {
@@ -85,7 +88,7 @@ h2::after,
     }
     .logo_nomination img {
         position: absolute;
-        top: 3540px;
+        top: 4740px;
     }
 }
 
@@ -93,12 +96,12 @@ h2::after,
     .image_sunflower {
         position: absolute;
         left: 160px;
-        top: 3400px;
+        top: 4600px;
     }
     .image_orchid {
         position: absolute;
-        right: -40px;
-        top: 3350px;
+        right: -20px;
+        top: 4550px;
     }
 }
 
@@ -223,3 +226,33 @@ h2::after,
                 }
         }
 }
+
+/* Carrousel personnages */
+.main-charater .title_animation {
+    justify-content: flex-start;
+}
+
+.cat_1 img {
+    background-image: url("./assets/images/background_kawaneko.png");
+}
+
+.slider {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+        .bloc_slider {
+            display: flex;
+            flex-direction: row;
+        }
+  }
+
+  .cat-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+        .img {
+        display: block;
+        width: 100%;
+        }
+  }

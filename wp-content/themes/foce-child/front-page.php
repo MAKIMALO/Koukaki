@@ -17,7 +17,7 @@ get_header();
                     <source src="<?php echo $background_video; ?>" type="video/mp4">
                 </video>
             </div>
-            <div class="bloc_img_logo" style="position:sticky">
+            <div class="bloc_img_logo" style="position: sticky">
                 <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">  
             </div>
         </section>
@@ -41,19 +41,23 @@ get_header();
             ?>
 
             <article id="characters">
+
+            <?php get_template_part( 'template-parts/slider' ); ?>
+
+            <!--slider SwiperJS
                 <div class="main-character">
                     <h3 class="title_animation"><span>Les personnages</span></h3>
-                    <?php
+                    /* <?php
                     $main_character = $characters_query->posts[0];
                     echo '<figure>';
                     echo get_the_post_thumbnail( $main_character->ID, 'full' );
                     echo '<figcaption>'. $main_character->post_title . '</figcaption>';
                     echo '</figure>';
                     $characters_query->next_post();
-                    ?>
-                </div>
+                    ?> */   
+            </div>
                 <div class="other-characters">
-                    <?php
+                    /* <?php
                     while ( $characters_query->have_posts() ) {
                         $characters_query->the_post();
                         echo '<figure>';
@@ -63,8 +67,9 @@ get_header();
                         echo'</figcaption>';
                         echo '</figure>';
                     }
-                    ?>
+                    ?> */
                 </div>
+                -->
             </article>
 
             <article id="place">
@@ -80,9 +85,9 @@ get_header();
                         <p><?php echo get_theme_mod('place'); ?></p>
                     </div>
                     <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"
-                    style="position: absolute" data-center-top="left:600px; transform:translateX(300px);" data-top="left:900px; transform:translateX(-600px);">
+                    style="position: absolute" data-center-top="left:700px; transform:translateX(300px);" data-top="left:1000px; transform:translateX(-600px);">
                     <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages"
-                    style="position: absolute" data-center-top="left:900px; transform:translateX(300px);" data-top="left:1200px; transform:translateX(-600px);">
+                    style="position: absolute" data-center-top="left:900px; transform:translateX(300px);" data-top="left:1300px; transform:translateX(-600px);">
                 </div>
             </article>
 
@@ -107,7 +112,7 @@ get_header();
 <?php
 get_footer();
 ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script src="./js/skroll.min.js" type="text/javascript"></script>
 <script>
     var s = skrollr.init();
 </script>

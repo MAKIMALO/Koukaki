@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  height: auto !important;
+}
+
 /* Fade in Section Banner */
 @keyframes fadein_banner {
   0% {
@@ -84,18 +88,18 @@ h2::after,
 }
 #oscars .logo_nomination img {
   position: absolute;
-  top: 3540px;
+  top: 4740px;
 }
 
 .oscars_flowers .image_sunflower {
   position: absolute;
   left: 160px;
-  top: 3400px;
+  top: 4600px;
 }
 .oscars_flowers .image_orchid {
   position: absolute;
-  right: -40px;
-  top: 3350px;
+  right: -20px;
+  top: 4550px;
 }
 
 .site-footer::before,
@@ -217,4 +221,34 @@ h2::after,
   top: 60px;
   filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   z-index: 1;
+}
+
+/* Carrousel personnages */
+.main-charater .title_animation {
+  justify-content: flex-start;
+}
+
+.cat_1 img {
+  background-image: url("./assets/images/background_kawaneko.png");
+}
+
+.slider {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.slider .bloc_slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.cat-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.cat-slide .img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=theme.css.map */
