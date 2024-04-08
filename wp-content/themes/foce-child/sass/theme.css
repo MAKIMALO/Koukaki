@@ -88,18 +88,18 @@ h2::after,
 }
 #oscars .logo_nomination img {
   position: absolute;
-  top: 4740px;
+  top: 3500px;
 }
 
 .oscars_flowers .image_sunflower {
   position: absolute;
   left: 160px;
-  top: 4600px;
+  top: 3350px;
 }
 .oscars_flowers .image_orchid {
   position: absolute;
   right: -20px;
-  top: 4550px;
+  top: 3300px;
 }
 
 .site-footer::before,
