@@ -15,4 +15,3 @@ const titles = document.querySelectorAll("h2 span");
 titles.forEach((title) => {
     observer.observe(title);
 });
-

@@ -1,3 +1,5 @@
+<body>
+<html>
 <?php
 
 get_header();
@@ -7,7 +9,7 @@ get_header();
 
         <section class="banner">
             <div class="bloc_video"
-            data-0="transform:translateY(0px)" data-200="transform:translateY(-150px);">
+            data-0="transform:translateY(0px)" data-200="transform:translateY(-170px);">
                 <?php
                     $background_video = get_theme_file_uri("assets/video/background_video.mp4");
                 ?>
@@ -77,8 +79,11 @@ get_header();
                         <h3 class="title_animation"><span>Le Lieu</span></h3>
                         <p><?php echo get_theme_mod('place'); ?></p>
                     </div>
-                    <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages">
-                    <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages">
+                    <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"
+                    style="position: absolute" data-center-top="left:600px; transform:translateX(300px);" data-top="left:900px; transform:translateX(-600px);">
+                    <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages"
+                    style="position: absolute" data-center-top="left:900px; transform:translateX(300px);" data-top="left:1200px; transform:translateX(-600px);">
+                </div>
             </article>
 
         </section>
@@ -101,3 +106,11 @@ get_header();
 
 <?php
 get_footer();
+?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script>
+    var s = skrollr.init();
+</script>
+
+</body>
+</html>
