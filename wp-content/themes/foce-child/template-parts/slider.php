@@ -3,39 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="sass/theme.css">
     <title>document</title>
 </head>
 <body>
-    <swiper-container class="mySwiper">
-        <swiper-slide>
-            <img src=" https://swiperjs.com/demos/images/nature-1.jpg" />
-        </swiper-slide>
-        <swiper-slide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </swiper-slide>
-            <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </swiper-slide>
-        <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </swiper-slide>
-        <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-            </swiper-slide>
-        <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-            </swiper-slide>
-        <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-            </swiper-slide>
-        <swiper-slide>
-        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-            </swiper-slide>
-        <swiper-slide>
-            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </swiper-slide>
-    </swiper-container>
+  <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide cat_1">
+          <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Kawaneko.png'; ?>" alt="Image d'un chat bleu avec des tâches blanches">
+        </div>
+        <div class="swiper-slide cat_2">
+          <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Onejiiro.png'; ?>" alt="Image d'un chat roux aux yeux verts">
+        </div>
+        <div class="swiper-slide cat_3">
+          <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Pinku.png'; ?>" alt="Image d'un chat blanc aux yeux bleus">
+        </div>
+        <div class="swiper-slide cat_4">
+          <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Tenshi.png'; ?>" alt="Image d'un chat roux aux yeux roses">
+        </div>
+        <div class="swiper-slide cat_5">
+          <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Jaakuna.png'; ?>" alt="Image d'un chat noir aux yeux verts">
+        </div>
+      </div>
+    </div>
 
 
 <script src="./wp-content/themes/foce-child/js/slider.js" type="text/javascript"></script>

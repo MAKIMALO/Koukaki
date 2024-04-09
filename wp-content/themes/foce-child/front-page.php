@@ -85,9 +85,9 @@ get_header();
                         <p><?php echo get_theme_mod('place'); ?></p>
                     </div>
                     <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"
-                    style="position: absolute" data-center-top="left:700px; transform:translateX(300px);" data-top="left:1000px; transform:translateX(-600px);">
+                    style="position: absolute" data-center-top="left:750px; transform:translateX(300px);" data-top="left:1050px; transform:translateX(-600px);">
                     <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages"
-                    style="position: absolute" data-center-top="left:900px; transform:translateX(300px);" data-top="left:1300px; transform:translateX(-600px);">
+                    style="position: absolute" data-center-top="left:950px; transform:translateX(300px);" data-top="left:1350px; transform:translateX(-600px);">
                 </div>
             </article>
 

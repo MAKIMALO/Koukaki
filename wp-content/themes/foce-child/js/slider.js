@@ -1,18 +1,18 @@
-    console.log("début slider");
-    const swiper = new Swiper(".slider", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      direction: "horizontal",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".slider_pagination",
-      },
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("test");
+  const swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: 10,
+    slidesPerView: "auto",
+    loop: true,
+    coverflowEffect: {
+      rotate: 55,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+  });
+});
