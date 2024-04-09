@@ -7,54 +7,38 @@
     <title>document</title>
 </head>
 <body>
-    <div class="main-character">
-        <h3 class="title_animation"><span>Les personnages</span></h3>
-        <div class="slider my_slider">
-            <div class="bloc_slider">    
-                <div class="cat_slide cat_1">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/cat_Kawaneko.png'; ?>" alt="Image d'un chat bleu avec des tâches blanches">
-                    <p>Kawaneko</p>
-                </div>
-                <div class="cat_slide cat_2">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/cat_Onejiiro.png'; ?>" alt="Image d'un chat rouxaux yeux verts">
-                    <p>Onejiiro</p>
-                </div>
-                <div class="cat_slide cat_3">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/cat_Pinku.png'; ?>" alt="Image d'un chat blanc aux yeux bleus">
-                    <p>Pinku</p>
-                </div>
-                <div class="cat_slide cat_4">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/cat_Tenshi.png'; ?>" alt="Image d'un chat roux aux yeux roses">
-                    <p>Tenshi</p>
-                </div>
-                <div class="cat_slide cat_5">
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/cat_Jaakuna.png'; ?>" alt="Image d'un chat noir aux yeux verts">
-                    <p>Jaakuna</p>
-                </div>
-            </div>
-            <div class="slider_pagination"></div>
-        </div>
-    </div>
+    <swiper-container class="mySwiper">
+        <swiper-slide>
+            <img src=" https://swiperjs.com/demos/images/nature-1.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </swiper-slide>
+            <swiper-slide>
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </swiper-slide>
+        <swiper-slide>
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </swiper-slide>
+        <swiper-slide>
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </swiper-slide>
+        <swiper-slide>
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </swiper-slide>
+        <swiper-slide>
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </swiper-slide>
+        <swiper-slide>
+        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </swiper-slide>
+        <swiper-slide>
+            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </swiper-slide>
+    </swiper-container>
 
 
-<script>
-    var swiper = new slider(".my_slider", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".slider_pagination",
-      },
-    });
-  </script>
+<script src="./wp-content/themes/foce-child/js/slider.js" type="text/javascript"></script>
 
 </body>
 </html>

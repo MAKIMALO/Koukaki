@@ -112,7 +112,8 @@ get_header();
 <?php
 get_footer();
 ?>
-<script src="./js/skroll.min.js" type="text/javascript"></script>
+
+<script src="./wp-content/themes/foce-child/js/skrollr.min.js" type="text/javascript"></script>
 <script>
     var s = skrollr.init();
 </script>

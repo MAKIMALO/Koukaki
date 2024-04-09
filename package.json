@@ -1,0 +1,26 @@
+{
+  "name": "koukaki",
+  "version": "1.0.0",
+  "description": "Projet 9 OC",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAKIMALO/Koukaki.git"
+  },
+  "keywords": [
+    "Koukaki"
+  ],
+  "author": "MAUDIC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAKIMALO/Koukaki/issues"
+  },
+  "homepage": "https://github.com/MAKIMALO/Koukaki#readme",
+  "dependencies": {
+    "swiper": "^11.1.0"
+  },
+  "devDependencies": {}
+}
