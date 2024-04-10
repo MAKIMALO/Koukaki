@@ -26,7 +26,7 @@
           <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Jaakuna.png'; ?>" alt="Image d'un chat noir aux yeux verts">
         </div>
       </div>
-    </div>
+  </div>
 
 
 <script src="./wp-content/themes/foce-child/js/slider.js" type="text/javascript"></script>

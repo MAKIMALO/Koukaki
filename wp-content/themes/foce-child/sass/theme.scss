@@ -133,6 +133,7 @@ h2::after,
     justify-content: center;
     align-items: center;
     background-image: none;
+    height: 806px;
 }
 
 .bloc_img_logo {
@@ -244,15 +245,38 @@ h2::after,
 }
 
 /* Carrousel personnages */
+.story {
+    #characters {
+    width: 1440px;
+    padding-top: 40px;
+    margin: 0;
+    }
+}
+
+.story #characters div {
+    flex: none
+}
+
+.main-character {
+    width: 100%;
+}
+
+.main-character h3 {
+    text-align: left;
+    background-position: left;
+    padding-left: 40px;
+}
+
 .swiper {
     width: 100%;
+    height: 400px;
     padding-top: 50px;
     padding-bottom: 50px;
-    &-slide {
+    .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         img {
         display: block;
         width: 100%;

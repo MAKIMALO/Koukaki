@@ -42,20 +42,19 @@ get_header();
 
             <article id="characters">
 
-            <?php get_template_part( 'template-parts/slider' ); ?>
-
-            <!--slider SwiperJS
                 <div class="main-character">
                     <h3 class="title_animation"><span>Les personnages</span></h3>
-                    /* <?php
+                    <?php get_template_part( 'template-parts/slider' ); ?>
+                    <!-- <?php
                     $main_character = $characters_query->posts[0];
                     echo '<figure>';
                     echo get_the_post_thumbnail( $main_character->ID, 'full' );
                     echo '<figcaption>'. $main_character->post_title . '</figcaption>';
                     echo '</figure>';
                     $characters_query->next_post();
-                    ?> */   
+                    ?> -->   
             </div>
+            <!--
                 <div class="other-characters">
                     /* <?php
                     while ( $characters_query->have_posts() ) {
@@ -67,9 +66,9 @@ get_header();
                         echo'</figcaption>';
                         echo '</figure>';
                     }
-                    ?> */
+                    ?>
                 </div>
-                -->
+            -->
             </article>
 
             <article id="place">

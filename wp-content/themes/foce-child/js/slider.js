@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-  console.log("test");
   const swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    spaceBetween: 10,
+    spaceBetween: 50,
     slidesPerView: "auto",
     loop: true,
     coverflowEffect: {
-      rotate: 55,
+      rotate: 20,
       stretch: 0,
       depth: 100,
       modifier: 1,
