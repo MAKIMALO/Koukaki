@@ -167,19 +167,19 @@ h2::after,
 /* Effet de flottement sur le titre principal */
 @keyframes float_title {
   0% {
-    transform: translate(2%, 2%);
+    transform: translate(1%, 1%);
   }
   25% {
     transform: translate(-1%, -1%);
   }
   50% {
-    transform: translate(2%, -2%);
+    transform: translate(1%, -1%);
   }
   75% {
     transform: translate(-1%, -1%);
   }
   100% {
-    transform: translate(2%, 2%);
+    transform: translate(1%, 1%);
   }
 }
 .bloc_img_logo {
@@ -243,11 +243,10 @@ h2::after,
 
 /* Carrousel personnages */
 .story #characters {
-  width: 1440px;
+  width: 100%;
   padding-top: 40px;
   margin: 0;
 }
-
 .story #characters div {
   flex: none;
 }
@@ -263,6 +262,7 @@ h2::after,
 }
 
 .swiper {
+  justify-content: center;
   width: 100%;
   height: 400px;
   padding-top: 50px;

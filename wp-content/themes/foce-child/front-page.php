@@ -17,7 +17,7 @@ get_header();
                     <source src="<?php echo $background_video; ?>" type="video/mp4">
                 </video>
             </div>
-            <div class="bloc_img_logo" style="position: sticky">
+            <div class="bloc_img_logo">
                 <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">  
             </div>
         </section>
