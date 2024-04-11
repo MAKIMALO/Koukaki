@@ -277,4 +277,98 @@ h2::after,
 .swiper .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+/* Header burger menu */
+.site-header {
+  height: 600px;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  z-index: 1;
+  background-color: #FFF5E9;
+}
+.site-header .top-site-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #FFD5A2;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: calc(0.5rem + 1.5vw);
+}
+.site-header .top-site-title h1 {
+  font-family: "quicksand";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -2%;
+  color: #000000;
+}
+.site-header .top-site-title #openBtn .burger-icon {
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+.site-header .top-site-title #openBtn .burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #FFD5A2;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.topnav .close {
+  color: #000000;
+  left: 1274px;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.topnav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+}
+.topnav ul li {
+  padding: 32px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 64px;
+  line-height: 84px;
+  text-align: center;
+  color: #000000;
+}
+.topnav ul li a:hover {
+  text-shadow: 0px 0px 14px #FF5C00;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+#mytopnav {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: left 0.3s ease;
+}
+
+#mytopnav .active {
+  left: 0;
 }/*# sourceMappingURL=theme.css.map */
