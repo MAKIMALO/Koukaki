@@ -35,9 +35,9 @@
                     <span></span>
                 </span>
             </a>
+            <a id="closeBtn" href="#" class="close">x</a>
         </div>
         <div id="mytopnav" class="topnav">
-            <a id="closeBtn" href="#" class="close">x</a>
             <ul>
                 <li><a href="#story">Histoire</a></li>
                 <li><a href="#characters">Personnages</a></li>
