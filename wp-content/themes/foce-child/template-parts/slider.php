@@ -29,7 +29,7 @@
   </div>
 
 
-<script src="./wp-content/themes/foce-child/js/slider.js" type="text/javascript"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/swiper.js" type="text/javascript"></script>
 
 </body>
 </html>

@@ -48,8 +48,7 @@
             
 	</header><!-- #masthead -->
 
-
-<script src="./wp-content/themes/foce-child/js/burger.js" type="text/javascript"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/burger.js" type="text/javascript"></script>
 
 </body>
 </html>

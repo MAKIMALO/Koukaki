@@ -112,7 +112,7 @@ get_header();
 get_footer();
 ?>
 
-<script src="./wp-content/themes/foce-child/js/skrollr.min.js" type="text/javascript"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/skrollr.min.js" type="text/javascript"></script>
 <script>
     var s = skrollr.init();
 </script>

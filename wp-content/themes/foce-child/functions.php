@@ -14,6 +14,9 @@
     add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
     function theme_enqueue_scripts() {
+        // Enqueue burger script
+        wp_enqueue_script( 'burger-script', get_stylesheet_directory_uri() . '/js/burger.js', array('jquery'), '1.2', true );
+        
         // Enqueue swiper script
         wp_enqueue_script( 'swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), '11.0.5', true);
         
