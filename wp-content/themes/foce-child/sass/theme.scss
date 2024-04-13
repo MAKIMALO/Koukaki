@@ -323,10 +323,12 @@ h2::after,
     .topnav {
         width: 100%;
         max-width: 1440px;
-        height: 224px;
         background-color: #FFF5E9;
-        position: relative;
+        display: flex;
+        justify-content: center;
         z-index: 2;
+        position: fixed;
+        top: -100%;
         transition: top 0.5s ease;
         ul {
             display: flex;
@@ -354,5 +356,8 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-
+.topnav.active {
+    top: 15%;
+    position: sticky;
+}
 
