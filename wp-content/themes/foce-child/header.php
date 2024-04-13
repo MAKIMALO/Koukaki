@@ -38,12 +38,14 @@
             <a id="closeBtn" href="#" class="close">x</a>
         </div>
         <div id="mytopnav" class="topnav">
+            <img class="img_logo_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_burger.png'; ?>" alt="logo Fleurs d'oranger & chats errants"> 
             <ul>
                 <li><a href="#story">Histoire</a></li>
                 <li><a href="#characters">Personnages</a></li>
                 <li><a href="#place">Lieu</a></li>
                 <li><a href="#studio">Studio Koukaki</a></li>
             </ul>
+            <img class="logo_studio_koukaki" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Studio_Koukaki.png'; ?>" alt="Logo du studio Koukaki"> 
         </div>
             
 	</header><!-- #masthead -->

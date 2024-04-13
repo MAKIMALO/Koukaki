@@ -114,7 +114,7 @@ h2::after,
   justify-content: center;
   align-items: center;
   background-image: none;
-  height: 806px;
+  height: 906px;
 }
 
 .bloc_img_logo {
@@ -268,6 +268,8 @@ h2::after,
 .site-header {
   width: 100%;
   max-width: 1440px;
+  position: fixed;
+  top: 30px;
 }
 .site-header .top-site-title {
   width: 100%;
@@ -276,13 +278,11 @@ h2::after,
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
   height: 80px;
   background-color: #FFD5A2;
-  top: 0;
-  left: 0;
-  z-index: 1;
   font-size: calc(0.5rem + 1.5vw);
+  position: sticky;
+  z-index: 1000;
 }
 .site-header .top-site-title h1 {
   font-family: "quicksand";
@@ -316,29 +316,40 @@ h2::after,
   max-width: 1440px;
   background-color: #FFF5E9;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   z-index: 2;
   position: fixed;
   top: -100%;
-  transition: top 0.5s ease;
+  padding-top: 20px;
+}
+.site-header .topnav .img_logo_burger {
+  width: 154px;
+  height: 95px;
+  align-self: center;
 }
 .site-header .topnav ul {
   display: flex;
   flex-direction: column;
+  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .site-header .topnav ul li {
-  padding: 32px 8px 32px 8px;
+  padding: 18px 6px 18px 6px;
   text-decoration: none;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 84px;
-  text-align: center;
   color: #000000;
 }
 .site-header .topnav ul li a:hover {
   text-shadow: 0px 0px 14px #FF5C00;
+}
+.site-header .topnav .logo_studio_koukaki {
+  padding-top: 120px;
+  padding-bottom: 40px;
 }
 
 a:-webkit-any-link {
