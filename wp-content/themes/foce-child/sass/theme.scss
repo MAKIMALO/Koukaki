@@ -153,19 +153,13 @@ h2::after,
 /* Effet de flottement sur le titre principal */
 @keyframes float_title {
     0% {
-        transform: translate(1%, 1%);
-    }
-    25% {
-        transform: translate(0%, 1%);
+        transform: translateY(2%);
     }
     50% {
-        transform: translate(1%, 0%);
-    }
-    75% {
-        transform: translate(-1%, -1%);
+        transform: translateY(0%);
     }
     100% {
-        transform: translate(1%, 1%);
+        transform: translateY(2%);
     }
 }
 
@@ -322,6 +316,7 @@ h2::after,
     }
     .topnav {
         width: 100%;
+        height: 100%;
         max-width: 1440px;
         background-color: #FFF5E9;
         display: flex;
@@ -331,7 +326,8 @@ h2::after,
         z-index: 2;
         position: fixed;
         top: -100%;
-        padding-top: 20px;
+        transition: top 0.8s ease;
+        padding-top: 120px;
         .img_logo_burger {
             width: 154px;
             height: 95px;
@@ -345,10 +341,9 @@ h2::after,
             margin: 0;
             padding: 0;
             li {
-                padding: 18px 6px 18px 6px;
+                padding: 20px 6px 20px 6px;
                 text-decoration: none;
-                font-size: 60px;
-                line-height: 84px;
+                font-size: 40px;
                 color: #000000;
                 a:hover {
                     text-shadow: 0px 0px 14px #FF5C00;
@@ -356,8 +351,22 @@ h2::after,
             }
         }
         .logo_studio_koukaki {
-            padding-top: 120px;
+            padding-top: 60px;
             padding-bottom: 40px;
+        }
+        .img_cat_burger {
+            .blue_cat {
+                position: absolute;
+                top: 15%;
+            }
+            .orange_cat {
+                position: absolute;
+                top: 15%;
+            }
+            .black_cat {
+                position: absolute;
+                top: 15%;
+            }
         }
     }
 }
@@ -368,7 +377,11 @@ a:-webkit-any-link {
 }
 
 .topnav.active {
-    top: 15%;
-    position: sticky;
+    top: 10%;
+    position: fixed;
+    max-height: 1024px;
+        @media (max-width: 1980px) {
+            top: 0;
+        }
 }
 

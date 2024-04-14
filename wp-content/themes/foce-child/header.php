@@ -46,6 +46,13 @@
                 <li><a href="#studio">Studio Koukaki</a></li>
             </ul>
             <img class="logo_studio_koukaki" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Studio_Koukaki.png'; ?>" alt="Logo du studio Koukaki"> 
+            <div class="img_cat_burger">
+                <img class="blue_cat" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/blue_cat.png'; ?>" alt="Image d'un chat bleu"> 
+                <img class="orange_cat" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orange_cat.png'; ?>" alt="Image d'un chat orange">
+                <img class="black_cat" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/black_cat.png'; ?>" alt="Image d'un chat noir">
+            </div>
+            <div class="img_flowers_burger">
+            </div>
         </div>
             
 	</header><!-- #masthead -->
