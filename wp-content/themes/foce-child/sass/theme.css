@@ -24,9 +24,10 @@ body {
 }
 .banner {
   animation: fadein_banner 3s;
+  width: 100%;
 }
 
-.banner .img_logo,
+.banner,
 .story,
 #place,
 #studio,
@@ -64,23 +65,24 @@ h2::after,
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 20px;
   overflow: hidden;
 }
 #oscars .oscars_flowers {
   display: flex;
   flex-direction: row;
   width: 100%;
+  overflow: hidden;
 }
 #oscars .oscars_flowers .image_sunflower {
-  position: absolute;
-  left: 160px;
-  top: 3350px;
+  position: relative;
+  left: 8%;
+  top: 20%;
 }
 #oscars .oscars_flowers .image_orchid {
-  position: absolute;
-  right: -20px;
-  top: 3300px;
+  position: relative;
+  left: 80%;
+  top: 60%;
 }
 #oscars .nomination {
   display: flex;
@@ -110,42 +112,30 @@ h2::after,
 
 /* Video background banner */
 .banner {
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: none;
-  height: 906px;
-}
-
-.bloc_img_logo {
-  height: 523px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.bloc_img_logo > .img_logo {
-  margin-top: -10%;
+.banner .background_video {
+  position: relative;
   width: 100%;
-  position: relative;
   z-index: 1;
+  padding-top: 78px;
 }
-
-.bloc_video {
-  height: 806px;
-  width: 1440px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-
-.background_video {
-  height: 806px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.banner .background_img {
   position: relative;
-  z-index: 0;
+  width: 100%;
+  z-index: -1;
+  margin-top: 0px;
+  padding-top: 78px;
+  display: none;
+}
+.banner .img_logo {
+  margin: 0;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  animation: float_title ease-in-out 3s infinite;
 }
 
 /* Effet de flottement sur le titre principal */
@@ -163,10 +153,6 @@ h2::after,
     transform: translate(1%, 1%);
   }
 }
-.bloc_img_logo {
-  animation: float_title ease-in-out 3s infinite;
-}
-
 /* Effet de déplacement des nuages */
 .story #place {
   background-image: none;
@@ -180,13 +166,14 @@ h2::after,
   width: 100%;
   min-height: 699px;
   background-size: cover;
-  position: absolute;
+  position: relative;
   z-index: -1;
 }
 .story .place_nuages {
   display: flex;
   max-width: 1440px !important;
   flex-direction: row !important;
+  overflow: hidden;
 }
 .story .place_nuages .place_text {
   position: absolute;
@@ -207,19 +194,21 @@ h2::after,
   position: absolute;
   width: 142px;
   height: 55px;
-  left: 793px;
-  top: 239px;
+  left: 50%;
+  top: 30%;
   filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   z-index: 1;
+  overflow: hidden;
 }
 .story .place_nuages .big_cloud {
   position: absolute;
   width: 316px;
   height: 122px;
-  left: 1031px;
-  top: 60px;
+  left: 60%;
+  top: 10%;
   filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   z-index: 1;
+  overflow: hidden;
 }
 
 /* Carrousel personnages */
@@ -262,15 +251,20 @@ h2::after,
   height: 440px;
 }
 
+#studio {
+  overflow: hidden;
+}
+
 /* Header burger menu */
 .site-header {
-  width: 100vw;
+  display: block;
+  width: 100%;
   max-width: 1440px;
   position: fixed;
   top: 30px;
 }
 .site-header .top-site-title {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;

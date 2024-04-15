@@ -8,18 +8,15 @@ get_header();
     <main id="primary" class="site-main">
 
         <section class="banner">
-            <div class="bloc_video"
-            data-0="transform:translateY(0px)" data-200="transform:translateY(-170px);">
-                <?php
-                    $background_video = get_theme_file_uri("assets/video/background_video.mp4");
-                ?>
-                <video class="background_video" autoplay loop muted poster="<?php echo get_theme_file_uri("assets/images/banner.png")?>">
-                    <source src="<?php echo $background_video; ?>" type="video/mp4">
-                </video>
-            </div>
-            <div class="bloc_img_logo">
-                <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">  
-            </div>
+            <?php
+                $background_video = get_theme_file_uri("assets/video/background_video.mp4");
+            ?>
+            <video class="background_video" autoplay loop muted poster="<?php echo get_stylesheet_directory_uri("assets/images/banner.png")?>">
+                <source src="<?php echo $background_video; ?>" type="video/mp4">
+            </video>
+            <img class="background_img" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/banner.png'; ?>" alt="Background Fleurs d'oranger & chats errants">
+            <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">  
+
         </section>
 
         <section id="#story" class="story">
@@ -86,7 +83,7 @@ get_header();
                     <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"
                     style="position: absolute" data-center-top="left:750px; transform:translateX(300px);" data-top="left:1050px; transform:translateX(-600px);">
                     <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages"
-                    style="position: absolute" data-center-top="left:950px; transform:translateX(300px);" data-top="left:1350px; transform:translateX(-600px);">
+                    style="position: absolute" data-center-top="left:1050px; transform:translateX(300px);" data-top="left:1350px; transform:translateX(-600px);">
                 </div>
             </article>
 

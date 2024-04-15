@@ -24,9 +24,10 @@ body {
 
 .banner {
     animation: fadein_banner 3s;
+    width: 100%;
 }
 
-.banner .img_logo,
+.banner,
 .story,
 #place,
 #studio,
@@ -65,21 +66,22 @@ h2::after,
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 20px;
     overflow: hidden;
     .oscars_flowers {
         display: flex;
         flex-direction: row;
         width: 100%;
+        overflow: hidden;
         .image_sunflower {
-            position: absolute;
-            left: 160px;
-            top: 3350px;
+            position: relative;
+            left: 8%;
+            top: 20%;
         }
         .image_orchid {
-            position: absolute;
-            right: -20px;
-            top: 3300px;
+            position: relative;
+            left: 80%;
+            top: 60%;
         }
     }
     .nomination {
@@ -116,41 +118,32 @@ h2::after,
 
 /* Video background banner */
 .banner {
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: none;
-    height: 906px;
-}
-
-.bloc_img_logo {
-    height: 523px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    & > .img_logo {
-        margin-top: -10%;
-        width: 100%;
-        position: relative;
-        z-index: 1;
+        .background_video {
+            position: relative;
+            width: 100%;
+            z-index: 1;
+            padding-top: 78px;
+        }
+        .background_img {
+            position: relative;
+            width: 100%;
+            z-index: -1;
+            margin-top: 0px;
+            padding-top: 78px;
+            display: none;
+        }
+        .img_logo {
+            margin: 0;
+            width: 50%;
+            position: absolute;
+            z-index: 2;
+            animation: float_title ease-in-out 3s infinite;
+            }
     }
-}
-
-.bloc_video {
-    height: 806px;
-    width: 1440px;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-}
-
-.background_video {
-    height: 806px;
-    object-fit: cover;
-    position: relative;
-    z-index: 0;
-}
+    
 
 /* Effet de flottement sur le titre principal */
 @keyframes float_title {
@@ -168,9 +161,6 @@ h2::after,
     }
 }
 
-.bloc_img_logo {
-    animation: float_title ease-in-out 3s infinite;
-}
 
 /* Effet de déplacement des nuages */
 .story {
@@ -186,13 +176,14 @@ h2::after,
             width: 100%;
             min-height: 699px;
             background-size: cover;
-            position: absolute;
+            position: relative;
             z-index: -1;
         }
         .place_nuages {
             display: flex;
             max-width: 1440px !important;
             flex-direction: row !important;
+            overflow: hidden;
             .place_text {
                 position: absolute;
                 z-index: 1;
@@ -212,22 +203,25 @@ h2::after,
                     position: absolute;
                     width: 142px;
                     height: 55px;
-                    left: 793px;
-                    top: 239px;
+                    left: 50%;
+                    top: 30%;
                     filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     z-index: 1;
+                    overflow: hidden;
                 }
                 .big_cloud {
                     position: absolute;
                     width: 316px;
                     height: 122px;
-                    left: 1031px;
-                    top: 60px;
+                    left: 60%;
+                    top: 10%;
                     filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     z-index: 1;
+                    overflow: hidden;
                 }
         }
 }
+
 
 /* Carrousel personnages */
 .story {
@@ -271,14 +265,19 @@ h2::after,
       }
 }
 
+#studio {
+    overflow: hidden;
+}
+
 /* Header burger menu */
 .site-header {
-    width: 100vw;
+    display: block;
+    width: 100%;
     max-width: 1440px;
     position: fixed;
     top: 30px;
     .top-site-title {
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
