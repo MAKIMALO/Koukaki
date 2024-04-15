@@ -38,20 +38,23 @@
             <a id="closeBtn" href="#" class="close">x</a>
         </div>
         <div id="mytopnav" class="topnav">
-            <img class="img_logo_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_burger.png'; ?>" alt="logo Fleurs d'oranger & chats errants"> 
             <ul>
+                <img class="img_logo_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_burger.png'; ?>" alt="logo Fleurs d'oranger & chats errants"> 
                 <li><a href="#story">Histoire</a></li>
                 <li><a href="#characters">Personnages</a></li>
                 <li><a href="#place">Lieu</a></li>
                 <li><a href="#studio">Studio Koukaki</a></li>
+                <img class="logo_studio_koukaki" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Studio_Koukaki.png'; ?>" alt="Logo du studio Koukaki"> 
             </ul>
-            <img class="logo_studio_koukaki" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Studio_Koukaki.png'; ?>" alt="Logo du studio Koukaki"> 
-            <div class="img_cat_burger">
-                <img class="blue_cat" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/blue_cat.png'; ?>" alt="Image d'un chat bleu"> 
-                <img class="orange_cat" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orange_cat.png'; ?>" alt="Image d'un chat orange">
-                <img class="black_cat" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/black_cat.png'; ?>" alt="Image d'un chat noir">
-            </div>
-            <div class="img_flowers_burger">
+            <div class="img_burger">
+                <img class="orchid_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orchid.png'; ?>" alt="Image d'une orchidée violette">
+                <img class="sunflower_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/sunflower.png'; ?>" alt="Image d'une marguerite blanche">  
+                <img class="flower_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/flower.png'; ?>" alt="Image d'une fleur orange">  
+                <img class="random_flower_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/random_flower.png'; ?>" alt="Image d'une fleur rose">  
+                <img class="hibiscus_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/hibiscus.png'; ?>" alt="Image d'une fleur d'hibiscus orange">  
+                <img class="blue_cat_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/blue_cat.png'; ?>" alt="Image d'un chat bleu"> 
+                <img class="orange_cat_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orange_cat.png'; ?>" alt="Image d'un chat orange">
+                <img class="black_cat_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/black_cat.png'; ?>" alt="Image d'un chat noir">
             </div>
         </div>
             

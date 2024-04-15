@@ -65,6 +65,7 @@ h2::after,
   flex-direction: column;
   width: 100%;
   margin-top: 60px;
+  overflow: hidden;
 }
 #oscars .oscars_flowers {
   display: flex;
@@ -150,13 +151,16 @@ h2::after,
 /* Effet de flottement sur le titre principal */
 @keyframes float_title {
   0% {
-    transform: translateY(2%);
+    transform: translate(1%, 1%);
   }
-  50% {
-    transform: translateY(0%);
+  30% {
+    transform: translate(0%, -1%);
+  }
+  60% {
+    transform: translate(-1%, 0%);
   }
   100% {
-    transform: translateY(2%);
+    transform: translate(1%, 1%);
   }
 }
 .bloc_img_logo {
@@ -260,14 +264,13 @@ h2::after,
 
 /* Header burger menu */
 .site-header {
-  width: 100%;
+  width: 100vw;
   max-width: 1440px;
   position: fixed;
   top: 30px;
 }
 .site-header .top-site-title {
-  width: 100%;
-  max-width: 1440px;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -307,7 +310,7 @@ h2::after,
 }
 .site-header .topnav {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 1440px;
   background-color: #FFF5E9;
   display: flex;
@@ -316,47 +319,94 @@ h2::after,
   align-items: center;
   z-index: 2;
   position: fixed;
+  padding-top: 60px;
   top: -100%;
   transition: top 0.8s ease;
-  padding-top: 120px;
-}
-.site-header .topnav .img_logo_burger {
-  width: 154px;
-  height: 95px;
-  align-self: center;
+  overflow: hidden;
 }
 .site-header .topnav ul {
-  display: flex;
   flex-direction: column;
-  text-align: center;
   list-style-type: none;
+  text-align: center;
+  position: fixed;
   margin: 0;
   padding: 0;
 }
+.site-header .topnav ul .img_logo_burger {
+  position: relative;
+  top: 20px;
+}
 .site-header .topnav ul li {
-  padding: 20px 6px 20px 6px;
+  padding: 18px 6px 18px 6px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 45px;
   color: #000000;
+  position: relative;
 }
 .site-header .topnav ul li a:hover {
   text-shadow: 0px 0px 14px #FF5C00;
 }
-.site-header .topnav .logo_studio_koukaki {
-  padding-top: 60px;
-  padding-bottom: 40px;
+.site-header .topnav ul .logo_studio_koukaki {
+  position: relative;
+  padding-top: 20px;
 }
-.site-header .topnav .img_cat_burger .blue_cat {
-  position: absolute;
-  top: 15%;
+.site-header .topnav .img_burger .orchid_burger {
+  width: 172px;
+  height: 168px;
+  top: 20%;
+  left: -4%;
 }
-.site-header .topnav .img_cat_burger .orange_cat {
-  position: absolute;
-  top: 15%;
+.site-header .topnav .img_burger .sunflower_burger {
+  width: 216px;
+  height: 216px;
+  top: 16%;
+  left: 65%;
 }
-.site-header .topnav .img_cat_burger .black_cat {
+.site-header .topnav .img_burger .flower_burger {
+  width: 70px;
+  height: 70px;
+  top: 60%;
+  left: 15%;
+}
+.site-header .topnav .img_burger .random_flower_burger {
+  width: 75px;
+  height: 74px;
+  top: 45%;
+  right: -2%;
+}
+.site-header .topnav .img_burger .hibiscus_burger {
+  width: 626px;
+  height: 626px;
+  left: 80%;
+  top: 60%;
+}
+.site-header .topnav .img_burger .blue_cat_burger {
+  top: 30%;
+  left: 20%;
+}
+.site-header .topnav .img_burger .orange_cat_burger {
+  top: 85%;
+  left: 6%;
+}
+.site-header .topnav .img_burger .black_cat_burger {
+  top: 55%;
+  left: 70%;
+}
+
+.orchid_burger,
+.sunflower_burger,
+.flower_burger,
+.random_flower_burger,
+.hibiscus_burger {
   position: absolute;
-  top: 15%;
+  animation: rotate_flowers 20s linear infinite;
+}
+
+.blue_cat_burger,
+.orange_cat_burger,
+.black_cat_burger {
+  position: absolute;
+  animation: float_title ease-in-out 3s infinite;
 }
 
 a:-webkit-any-link {
@@ -364,12 +414,7 @@ a:-webkit-any-link {
 }
 
 .topnav.active {
-  top: 10%;
-  position: fixed;
-  max-height: 1024px;
-}
-@media (max-width: 1980px) {
-  .topnav.active {
-    top: 0;
-  }
+  top: 0;
+  width: 100%;
+  height: 100vh;
 }/*# sourceMappingURL=theme.css.map */
