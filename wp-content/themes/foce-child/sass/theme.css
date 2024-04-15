@@ -120,14 +120,12 @@ h2::after,
   position: relative;
   width: 100%;
   z-index: 1;
-  padding-top: 78px;
 }
 .banner .background_img {
   position: relative;
   width: 100%;
   z-index: -1;
   margin-top: 0px;
-  padding-top: 78px;
   display: none;
 }
 .banner .img_logo {
@@ -257,11 +255,7 @@ h2::after,
 
 /* Header burger menu */
 .site-header {
-  display: block;
   width: 100%;
-  max-width: 1440px;
-  position: fixed;
-  top: 30px;
 }
 .site-header .top-site-title {
   width: 100%;
