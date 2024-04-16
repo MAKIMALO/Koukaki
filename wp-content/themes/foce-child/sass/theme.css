@@ -113,8 +113,7 @@ h2::after,
 /* Video background banner */
 .banner {
   background-image: none;
-  display: flex;
-  justify-content: center;
+  min-height: auto;
 }
 .banner .background_video {
   position: relative;
@@ -125,14 +124,16 @@ h2::after,
   position: relative;
   width: 100%;
   z-index: -1;
-  margin-top: 0px;
+  margin-top: 0;
   display: none;
 }
-.banner .img_logo {
-  margin: 0;
-  width: 50%;
+.banner .img_logo_parralax {
   position: absolute;
   z-index: 2;
+}
+.banner .img_logo_parralax .img_logo {
+  width: 100%;
+  position: relative;
   animation: float_title ease-in-out 3s infinite;
 }
 
@@ -277,9 +278,12 @@ h2::after,
   letter-spacing: -2%;
   color: #000000;
 }
+.site-header .top-site-title h1 :hover {
+  color: #000000;
+}
 .site-header .top-site-title #openBtn .burger-icon {
-  left: 1274px;
-  top: 20px;
+  left: 85%;
+  top: 26%;
   position: absolute;
 }
 .site-header .top-site-title #openBtn .burger-icon span {
@@ -291,9 +295,10 @@ h2::after,
 }
 .site-header .top-site-title #closeBtn {
   color: #000000;
-  left: 1274px;
-  font-size: 40px;
+  left: 85%;
+  top: 12%;
   position: absolute;
+  font-size: 40px;
   display: none;
 }
 .site-header .topnav {
@@ -301,33 +306,31 @@ h2::after,
   height: 100vh;
   max-width: 1440px;
   background-color: #FFF5E9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   z-index: 2;
   position: fixed;
-  padding-top: 60px;
   top: -100%;
   transition: top 0.8s ease;
   overflow: hidden;
 }
 .site-header .topnav ul {
+  display: flex;
   flex-direction: column;
   list-style-type: none;
   text-align: center;
-  position: fixed;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20%;
   margin: 0;
   padding: 0;
 }
 .site-header .topnav ul .img_logo_burger {
   position: relative;
-  top: 20px;
 }
 .site-header .topnav ul li {
   padding: 18px 6px 18px 6px;
   text-decoration: none;
-  font-size: 45px;
+  font-size: calc(0.5rem + 1.5vw);
   color: #000000;
   position: relative;
 }
@@ -336,7 +339,7 @@ h2::after,
 }
 .site-header .topnav ul .logo_studio_koukaki {
   position: relative;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .site-header .topnav .img_burger .orchid_burger {
   width: 172px;
@@ -347,38 +350,38 @@ h2::after,
 .site-header .topnav .img_burger .sunflower_burger {
   width: 216px;
   height: 216px;
-  top: 16%;
-  left: 65%;
+  top: 18%;
+  left: 70%;
 }
 .site-header .topnav .img_burger .flower_burger {
   width: 70px;
   height: 70px;
-  top: 60%;
+  top: 56%;
   left: 15%;
 }
 .site-header .topnav .img_burger .random_flower_burger {
   width: 75px;
   height: 74px;
-  top: 45%;
+  top: 44%;
   right: -2%;
 }
 .site-header .topnav .img_burger .hibiscus_burger {
   width: 626px;
   height: 626px;
-  left: 80%;
-  top: 60%;
+  top: 62%;
+  left: 78%;
 }
 .site-header .topnav .img_burger .blue_cat_burger {
-  top: 30%;
-  left: 20%;
+  top: 32%;
+  left: 24%;
 }
 .site-header .topnav .img_burger .orange_cat_burger {
-  top: 85%;
+  top: 82%;
   left: 6%;
 }
 .site-header .topnav .img_burger .black_cat_burger {
-  top: 55%;
-  left: 70%;
+  top: 54%;
+  left: 68%;
 }
 
 .orchid_burger,

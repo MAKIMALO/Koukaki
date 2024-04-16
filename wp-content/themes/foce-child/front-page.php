@@ -15,8 +15,10 @@ get_header();
                 <source src="<?php echo $background_video; ?>" type="video/mp4">
             </video>
             <img class="background_img" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/banner.png'; ?>" alt="Background Fleurs d'oranger & chats errants">
-            <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">  
-
+            
+            <div class="img_logo_parralax" data-0="transform: translateY(0px)" data-1000="transform: translateY(200px)">
+                <img class="img_logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">
+            </div>
         </section>
 
         <section id="#story" class="story">
