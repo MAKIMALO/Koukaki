@@ -22,7 +22,7 @@ get_header();
         </section>
 
         <section id="#story" class="story">
-            <h2 class="title_animation"><span>L'histoire</span></h2>
+            <h2><span class="title">L'histoire</span></h2>
 
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
@@ -42,7 +42,7 @@ get_header();
             <article id="characters">
 
                 <div class="main-character">
-                    <h3 class="title_animation"><span>Les personnages</span></h3>
+                    <h3><span class="title">Les personnages</span></h3>
                     <?php get_template_part( 'template-parts/slider' ); ?>
                     <!-- <?php
                     $main_character = $characters_query->posts[0];
@@ -79,7 +79,7 @@ get_header();
                 <img class="background_img_place" src="<?php echo $background_img_place ?>" type="image" alt="Image de fond colorée">
                 <div class="place_nuages">
                     <div class="place_text">
-                        <h3 class="title_animation"><span>Le Lieu</span></h3>
+                        <h3><span class="title">Le Lieu</span></h3>
                         <p><?php echo get_theme_mod('place'); ?></p>
                     </div>
                     <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"
@@ -92,7 +92,7 @@ get_header();
         </section>
 
         <section id="studio">
-            <h2 class="title_animation"><span>Studio Koukaki</span></h2>
+            <h2><span class="title">Studio Koukaki</span></h2>
             <div>
                 <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>
                 <p>Avec une créativité et une capacité d’innovation mondialement reconnues, une expertise éditoriale et commerciale à la pointe de son industrie, le Studio Koukaki se positionne comme un acteur incontournable dans un marché en forte croissance. Koukaki construit chaque année de véritables succès et capitalise sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats errants”.</p>
@@ -112,6 +112,7 @@ get_footer();
 ?>
 
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/skrollr.min.js" type="text/javascript"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/title_animation.js" type="text/javascript"></script>
 <script>
     var s = skrollr.init();
 </script>

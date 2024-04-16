@@ -56,10 +56,25 @@ h2::after,
 }
 
 /* Animation des titres */
-.title_animation {
-  transform: opacity 4s ease, transform 4s ease;
+.title {
+  opacity: 0;
 }
 
+.title.title_animate {
+  opacity: 1;
+  animation: title_animate_1 1s ease-in-out;
+}
+
+@keyframes title_animate_1 {
+  0% {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* Section Oscars */
 #oscars {
   display: flex;
