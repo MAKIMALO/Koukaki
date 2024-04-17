@@ -16,7 +16,7 @@ body {
 @keyframes fadein_logo {
   0% {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(40%);
   }
   100% {
     opacity: 1;
@@ -28,7 +28,7 @@ body {
 }
 
 .logo_fade_in {
-  animation: fadein_logo 3s;
+  animation: fadein_logo 2s;
 }
 
 /* Rotation des fleurs */
@@ -311,6 +311,7 @@ h2::after,
 /* Header burger menu */
 .site-header {
   width: 100%;
+  top: 30px;
 }
 .site-header .top-site-title {
   width: 100%;
@@ -356,7 +357,7 @@ h2::after,
   display: none;
 }
 .site-header .topnav {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   max-width: 1440px;
   background-color: #FFF5E9;
@@ -366,7 +367,15 @@ h2::after,
   transition: top 0.8s ease;
   overflow: hidden;
 }
-.site-header .topnav ul {
+.site-header .topnav .menu_burger {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-header .topnav .menu_burger ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -374,66 +383,67 @@ h2::after,
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 20%;
-  margin: 0;
+  top: 5%;
   padding: 0;
+  margin: 0;
 }
-.site-header .topnav ul .img_logo_burger {
+.site-header .topnav .menu_burger ul .img_logo_burger {
   position: relative;
+  padding-bottom: 20px;
 }
-.site-header .topnav ul li {
+.site-header .topnav .menu_burger ul li {
   padding: 18px 6px 18px 6px;
   text-decoration: none;
   font-size: calc(0.5rem + 1.5vw);
   color: #000000;
   position: relative;
 }
-.site-header .topnav ul li a:hover {
+.site-header .topnav .menu_burger ul li a:hover {
   text-shadow: 0px 0px 14px #FF5C00;
 }
-.site-header .topnav ul .logo_studio_koukaki {
+.site-header .topnav .menu_burger ul .logo_studio_koukaki {
   position: relative;
-  padding-top: 50px;
+  padding-top: 60px;
 }
-.site-header .topnav .img_burger .orchid_burger {
+.site-header .topnav .menu_burger .img_burger .orchid_burger {
   width: 172px;
   height: 168px;
   top: 20%;
   left: -4%;
 }
-.site-header .topnav .img_burger .sunflower_burger {
+.site-header .topnav .menu_burger .img_burger .sunflower_burger {
   width: 216px;
   height: 216px;
   top: 18%;
   left: 70%;
 }
-.site-header .topnav .img_burger .flower_burger {
+.site-header .topnav .menu_burger .img_burger .flower_burger {
   width: 70px;
   height: 70px;
   top: 56%;
   left: 15%;
 }
-.site-header .topnav .img_burger .random_flower_burger {
+.site-header .topnav .menu_burger .img_burger .random_flower_burger {
   width: 75px;
   height: 74px;
   top: 44%;
   right: -2%;
 }
-.site-header .topnav .img_burger .hibiscus_burger {
+.site-header .topnav .menu_burger .img_burger .hibiscus_burger {
   width: 626px;
   height: 626px;
   top: 62%;
   left: 78%;
 }
-.site-header .topnav .img_burger .blue_cat_burger {
+.site-header .topnav .menu_burger .img_burger .blue_cat_burger {
   top: 32%;
   left: 24%;
 }
-.site-header .topnav .img_burger .orange_cat_burger {
+.site-header .topnav .menu_burger .img_burger .orange_cat_burger {
   top: 82%;
   left: 6%;
 }
-.site-header .topnav .img_burger .black_cat_burger {
+.site-header .topnav .menu_burger .img_burger .black_cat_burger {
   top: 54%;
   left: 68%;
 }
