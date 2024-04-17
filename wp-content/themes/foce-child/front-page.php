@@ -22,7 +22,10 @@ get_header();
         </section>
 
         <section id="#story" class="story">
-            <h2><span class="title">L'histoire</span></h2>
+            <h2>
+                <span class="anim_title_1">L'</span>
+                <span class="anim_title_2">histoire</span>
+            </h2>
 
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>

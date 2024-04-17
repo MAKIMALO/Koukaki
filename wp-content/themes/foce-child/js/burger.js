@@ -1,3 +1,5 @@
+console.log("le fichier burger.js fonctionne")
+
 const topnav = document.querySelector(".topnav");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");

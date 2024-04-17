@@ -57,18 +57,40 @@ h2::after,
 }
 
 /* Animation des titres */
-.title {
+.anim_title_1,
+.anim_title_2 {
     opacity: 0;
 }
 
-.title.title_animate {
+.title_animate_1,
+.title_animate_2 {
+    display: inline-block;
+    position: relative;
     opacity: 1;
-    animation: title_animate_1 1s ease-in-out;
 }
 
-@keyframes title_animate_1 {
+.title_animate_1 {
+    animation: fade_in_title_animate_1 ease-in-out;
+}
+
+.title_animate_2 {
+    animation: fade_in_title_animate_2 ease-in-out;
+}
+
+@keyframes fade_in_title_animate_1 {
     0% {
-        transform: translateY(-40%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade_in_title_animate_2 {
+    0% {
+        transform: translateY(150%);
         opacity: 0;
     }
     100% {

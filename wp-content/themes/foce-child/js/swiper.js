@@ -1,3 +1,5 @@
+console.log("le fichier swiper.js fonctionne")
+
 document.addEventListener('DOMContentLoaded', function() {
   const swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
