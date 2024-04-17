@@ -40,10 +40,10 @@
         <div id="mytopnav" class="topnav">
             <ul>
                 <img class="img_logo_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_burger.png'; ?>" alt="logo Fleurs d'oranger & chats errants"> 
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
+                <li class="anim_title_1"><a href="#story">Histoire</a></li>
+                <li class="anim_title_1"><a href="#characters">Personnages</a></li>
+                <li class="anim_title_1"><a href="#place">Lieu</a></li>
+                <li class="anim_title_1"><a href="#studio">Studio Koukaki</a></li>
                 <img class="logo_studio_koukaki" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Studio_Koukaki.png'; ?>" alt="Logo du studio Koukaki"> 
             </ul>
             <div class="img_burger">

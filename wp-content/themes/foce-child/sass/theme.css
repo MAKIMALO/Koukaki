@@ -13,7 +13,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes fadein_main {
+@keyframes fadein_logo {
   0% {
     opacity: 0;
     transform: translateY(30%);
@@ -27,13 +27,8 @@ body {
   width: 100%;
 }
 
-.banner,
-.story,
-#place,
-#studio,
-.nomination,
-#colophon {
-  animation: fadein_main 3s;
+.logo_fade_in {
+  animation: fadein_logo 3s;
 }
 
 /* Rotation des fleurs */
@@ -55,10 +50,12 @@ h2::after,
   line-height: 0;
 }
 
-/* Animation des titres */
+/* Animation des titres en fade-in */
 .anim_title_1,
 .anim_title_2 {
   opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .title_animate_1,
@@ -66,19 +63,20 @@ h2::after,
   display: inline-block;
   position: relative;
   opacity: 1;
+  transform: translateY(0);
 }
 
 .title_animate_1 {
-  animation: fade_in_title_animate_1 ease-in-out;
+  animation: fade_in_title_animate_1 1.5s ease-in-out;
 }
 
 .title_animate_2 {
-  animation: fade_in_title_animate_2 ease-in-out;
+  animation: fade_in_title_animate_2 1.5s ease-in-out;
 }
 
 @keyframes fade_in_title_animate_1 {
   0% {
-    transform: translateY(100%);
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
@@ -88,7 +86,27 @@ h2::after,
 }
 @keyframes fade_in_title_animate_2 {
   0% {
-    transform: translateY(150%);
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Animation des sections en fade-in */
+.anim_article {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.article_animate {
+  animation: fade_in_article_animate 2s ease-in-out forwards;
+}
+
+@keyframes fade_in_article_animate {
+  0% {
+    transform: translateY(50%);
     opacity: 0;
   }
   100% {
