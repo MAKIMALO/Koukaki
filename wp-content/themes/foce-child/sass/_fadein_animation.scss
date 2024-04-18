@@ -22,11 +22,12 @@
 .banner {
     animation: fadein_banner 3s;
     width: 100%;
+    .logo_fade_in {
+        animation: fadein_logo 2s;
+    }
 }
 
-.logo_fade_in {
-    animation: fadein_logo 2s;
-}
+
 
 /* Animation des titres en fade-in */
 .anim_title_1,

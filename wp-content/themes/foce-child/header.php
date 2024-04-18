@@ -38,7 +38,7 @@
             <a id="closeBtn" href="#" class="close">x</a>
         </nav>
         <section id="mytopnav" class="topnav">
-            <div class="menu_burger">
+            <div class="topnav__menu">
                 <ul>
                     <img class="img_logo_burger" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_burger.png'; ?>" alt="logo Fleurs d'oranger & chats errants"> 
                     <li class="anim_title_1"><a href="#story">Histoire</a></li>
