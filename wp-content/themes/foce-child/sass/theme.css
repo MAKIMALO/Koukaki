@@ -374,6 +374,7 @@ h2::after,
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .site-header .topnav .menu_burger ul {
   display: flex;
@@ -382,13 +383,14 @@ h2::after,
   text-align: center;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   top: 5%;
   padding: 0;
   margin: 0;
 }
 .site-header .topnav .menu_burger ul .img_logo_burger {
   position: relative;
+  padding-top: 80px;
   padding-bottom: 20px;
 }
 .site-header .topnav .menu_burger ul li {
@@ -406,45 +408,44 @@ h2::after,
   padding-top: 60px;
 }
 .site-header .topnav .menu_burger .img_burger .orchid_burger {
-  width: 172px;
-  height: 168px;
+  width: 12%;
   top: 20%;
   left: -4%;
 }
 .site-header .topnav .menu_burger .img_burger .sunflower_burger {
-  width: 216px;
-  height: 216px;
-  top: 18%;
+  width: 14%;
+  top: 20%;
   left: 70%;
 }
 .site-header .topnav .menu_burger .img_burger .flower_burger {
-  width: 70px;
-  height: 70px;
+  width: 5%;
   top: 56%;
   left: 15%;
 }
 .site-header .topnav .menu_burger .img_burger .random_flower_burger {
-  width: 75px;
-  height: 74px;
+  width: 5%;
   top: 44%;
   right: -2%;
 }
 .site-header .topnav .menu_burger .img_burger .hibiscus_burger {
-  width: 626px;
-  height: 626px;
-  top: 62%;
-  left: 78%;
+  width: 30%;
+  top: 70%;
+  left: 84%;
+  opacity: 0.9;
 }
 .site-header .topnav .menu_burger .img_burger .blue_cat_burger {
+  width: 10%;
   top: 32%;
   left: 24%;
 }
 .site-header .topnav .menu_burger .img_burger .orange_cat_burger {
+  width: 8%;
   top: 82%;
   left: 6%;
 }
 .site-header .topnav .menu_burger .img_burger .black_cat_burger {
-  top: 54%;
+  width: 10%;
+  top: 58%;
   left: 68%;
 }
 
@@ -454,6 +455,7 @@ h2::after,
 .random_flower_burger,
 .hibiscus_burger {
   position: absolute;
+  height: auto;
   animation: rotate_flowers 20s linear infinite;
 }
 
@@ -461,6 +463,7 @@ h2::after,
 .orange_cat_burger,
 .black_cat_burger {
   position: absolute;
+  height: auto;
   animation: float_title ease-in-out 3s infinite;
 }
 
