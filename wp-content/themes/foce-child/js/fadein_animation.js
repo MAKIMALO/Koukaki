@@ -48,7 +48,7 @@ const observer3 = new IntersectionObserver(entries => {
 
     });
 }, {
-    threshold: 0.2
+    threshold: 0.1
 });
 
 const sections3 = document.querySelectorAll(".anim_article");

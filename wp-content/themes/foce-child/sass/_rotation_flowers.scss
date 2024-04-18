@@ -1,0 +1,19 @@
+/* Rotation des fleurs */
+@keyframes rotate_flowers {
+    from {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.story__article::after,
+h2::after,
+#studio h2::before,
+.image_sunflower,
+.image_orchid,
+.site-footer ul::after {
+    animation: rotate_flowers 20s linear infinite;
+    line-height: 0;
+}

@@ -1,0 +1,28 @@
+/* Video background banner */
+.banner {
+    background-image: none;
+    min-height: auto;
+        .background_video {
+            position: relative;
+            width: 100%;
+            z-index: 1;
+        }
+        .background_img {
+            position: relative;
+            width: 100%;
+            z-index: -1;
+            margin-top: 0;
+            display: none;
+        }
+        .img_logo_parralax {
+            position: absolute;
+            z-index: 2;
+            .img_logo {
+                width: 100%;
+                position: relative;
+                animation: float_title ease-in-out 3s infinite;
+            }
+        }
+        
+    }
+    

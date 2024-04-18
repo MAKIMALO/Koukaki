@@ -1,0 +1,45 @@
+/* Carrousel personnages */
+.story {
+    #characters {
+    width: 100%;
+    padding-top: 40px;
+    margin: 0;
+        div {
+        flex: none;
+        }
+    }
+}
+
+.main-character {
+    width: 100%;
+}
+
+.main-character h3 {
+    text-align: left;
+    background-position: left;
+    padding-left: 40px;
+}
+
+.swiper {
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        img {
+        display: block;
+        width: 400px;
+        height: 440px;
+        }
+      }
+}
+
+#studio {
+    overflow: hidden;
+}

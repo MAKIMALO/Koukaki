@@ -1,0 +1,174 @@
+/* Header burger menu */
+.site-header {
+    width: 100%;
+    top: 30px;
+    .top-site-title {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        background-color: #FFD5A2;
+        font-size: calc(0.5rem + 1.5vw);
+        position: sticky;
+        z-index: 1000;
+        h1 {
+            font-family: 'quicksand';
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: -2%;
+            color: #000000;
+            :hover {
+                color: #000000;
+            }
+        }
+        #openBtn {
+            .burger-icon {
+                left: 85%;
+                top: 26%;
+                position: absolute;
+                span {
+                    display: block;
+                    width: 35px;
+                    height: 5px;
+                    background-color: black;
+                    margin: 6px 0;
+                }
+            }
+        }
+        #closeBtn {
+            color: #000000;
+            left: 85%;
+            top: 12%;
+            position: absolute;
+            font-size: 40px;
+            display: none;
+        }
+    }
+    .topnav {
+        width: 100vw;
+        height: 100vh;
+        max-width: 1440px;
+        background-color: #FFF5E9;
+        z-index: 2;
+        position: fixed;
+        top: -100%;
+        transition: top 0.8s ease;
+        overflow: hidden;
+        .menu_burger {
+            width: 100vw;
+            height: 100vh;
+            max-width: 1440px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 5%;
+                padding: 0;
+                margin: 0;
+                .img_logo_burger {
+                    position: relative;
+                    padding-top: 80px;
+                    padding-bottom: 20px;
+                }
+                li {
+                    padding: 18px 6px 18px 6px;
+                    text-decoration: none;
+                    font-size: calc(0.5rem + 1.5vw);
+                    color: #000000;
+                    position: relative;
+                    a:hover {
+                        text-shadow: 0px 0px 14px #FF5C00;
+                    }
+                }
+                .logo_studio_koukaki {
+                    position: relative;
+                    padding-top: 60px;
+                }
+            }
+            .img_burger {
+                .orchid_burger {
+                    width: 12%;
+                    top: 20%;
+                    left: -4%;
+                }
+                .sunflower_burger {
+                    width: 14%;
+                    top: 20%;
+                    left: 70%;
+                }
+                .flower_burger {
+                    width: 5%;
+                    top: 56%;
+                    left: 15%;
+                }
+                .random_flower_burger {
+                    width: 5%;
+                    top: 44%;
+                    right: -2%;
+                }
+                .hibiscus_burger {
+                    width: 30%;
+                    top: 70%;
+                    left: 84%;
+                    opacity: 0.9;
+                }
+
+                .blue_cat_burger {
+                    width: 10%;
+                    top: 32%;
+                    left: 24%;
+                }
+                .orange_cat_burger {
+                    width: 8%;
+                    top: 82%;
+                    left: 6%;
+                }
+                .black_cat_burger {
+                    width: 10%;
+                    top: 58%;
+                    left: 68%;
+                }
+            }
+        }
+    }
+}
+
+.orchid_burger,
+.sunflower_burger,
+.flower_burger,
+.random_flower_burger,
+.hibiscus_burger {
+    position: absolute;
+    height: auto;
+    animation: rotate_flowers 20s linear infinite;
+}
+
+.blue_cat_burger,
+.orange_cat_burger,
+.black_cat_burger {
+    position:absolute;
+    height: auto;
+    animation: float_title ease-in-out 3s infinite;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.topnav.active {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+

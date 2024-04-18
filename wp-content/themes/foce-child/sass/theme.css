@@ -4,6 +4,7 @@ body {
 }
 
 /* Fade in Section Banner */
+/* Fade in Section Banner */
 @keyframes fadein_banner {
   0% {
     opacity: 0;
@@ -31,6 +32,71 @@ body {
   animation: fadein_logo 2s;
 }
 
+/* Animation des titres en fade-in */
+.anim_title_1,
+.anim_title_2 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.title_animate_1,
+.title_animate_2 {
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title_animate_1 {
+  animation: fade_in_title_animate_1 1.5s ease-in-out;
+}
+
+.title_animate_2 {
+  animation: fade_in_title_animate_2 1.5s ease-in-out;
+}
+
+@keyframes fade_in_title_animate_1 {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade_in_title_animate_2 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Animation des sections en fade-in */
+.anim_article {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.article_animate {
+  animation: fade_in_article_animate 2s ease-in-out forwards;
+}
+
+@keyframes fade_in_article_animate {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Rotation des fleurs */
 /* Rotation des fleurs */
 @keyframes rotate_flowers {
   from {
@@ -48,6 +114,128 @@ h2::after,
 .site-footer ul::after {
   animation: rotate_flowers 20s linear infinite;
   line-height: 0;
+}
+
+/* Animation des titres en fade-in */
+/* Fade in Section Banner */
+@keyframes fadein_banner {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein_logo {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.banner {
+  animation: fadein_banner 3s;
+  width: 100%;
+}
+
+.logo_fade_in {
+  animation: fadein_logo 2s;
+}
+
+/* Animation des titres en fade-in */
+.anim_title_1,
+.anim_title_2 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.title_animate_1,
+.title_animate_2 {
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title_animate_1 {
+  animation: fade_in_title_animate_1 1.5s ease-in-out;
+}
+
+.title_animate_2 {
+  animation: fade_in_title_animate_2 1.5s ease-in-out;
+}
+
+@keyframes fade_in_title_animate_1 {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade_in_title_animate_2 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Animation des sections en fade-in */
+.anim_article {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.article_animate {
+  animation: fade_in_article_animate 2s ease-in-out forwards;
+}
+
+@keyframes fade_in_article_animate {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Animation des sections en fade-in */
+/* Fade in Section Banner */
+@keyframes fadein_banner {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein_logo {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.banner {
+  animation: fadein_banner 3s;
+  width: 100%;
+}
+
+.logo_fade_in {
+  animation: fadein_logo 2s;
 }
 
 /* Animation des titres en fade-in */
@@ -115,6 +303,7 @@ h2::after,
   }
 }
 /* Section Oscars */
+/* Section Oscars */
 #oscars {
   display: flex;
   flex-direction: column;
@@ -165,6 +354,7 @@ h2::after,
 }
 
 /* Video background banner */
+/* Video background banner */
 .banner {
   background-image: none;
   min-height: auto;
@@ -192,6 +382,7 @@ h2::after,
 }
 
 /* Effet de flottement sur le titre principal */
+/* Effet de flottement sur le titre principal */
 @keyframes float_title {
   0% {
     transform: translate(1%, 1%);
@@ -206,6 +397,7 @@ h2::after,
     transform: translate(1%, 1%);
   }
 }
+/* Effet de déplacement des nuages */
 /* Effet de déplacement des nuages */
 .story #place {
   background-image: none;
@@ -265,6 +457,7 @@ h2::after,
 }
 
 /* Carrousel personnages */
+/* Carrousel personnages */
 .story #characters {
   width: 100%;
   padding-top: 40px;
@@ -308,6 +501,7 @@ h2::after,
   overflow: hidden;
 }
 
+/* Header burger menu */
 /* Header burger menu */
 .site-header {
   width: 100%;

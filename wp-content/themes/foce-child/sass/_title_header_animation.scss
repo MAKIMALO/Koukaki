@@ -1,0 +1,15 @@
+/* Effet de flottement sur le titre principal */
+@keyframes float_title {
+    0% {
+        transform: translate(1%, 1%);
+    }
+    30% {
+        transform: translate(0%, -1%);
+    }
+    60% {
+        transform: translate(-1%, 0%);
+    }
+    100% {
+        transform: translate(1%, 1%);
+    }
+}
