@@ -58,7 +58,7 @@ get_header();
                     echo '</figure>';
                     $characters_query->next_post();
                     ?> -->   
-            </div>
+                </div>
             <!--
                 <div class="other-characters">
                     /* <?php
@@ -86,9 +86,9 @@ get_header();
                 <div class="place_nuages">
                     <div class="place_text">
                         <h3>
-                        <span class="anim_title_1">Le</spans>
-                        <span class="anim_title_2">Lieu</span>
-                    </h3>
+                            <span class="anim_title_1">Le</spans>
+                            <span class="anim_title_2">Lieu</span>
+                        </h3>
                         <p><?php echo get_theme_mod('place'); ?></p>
                     </div>
                     <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"

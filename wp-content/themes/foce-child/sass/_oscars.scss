@@ -10,13 +10,14 @@
         flex-direction: row;
         width: 100%;
         overflow: hidden;
-        .image_sunflower {
+        > img {
             position: relative;
+        }
+        .image_sunflower {
             left: 8%;
             top: 20%;
         }
         .image_orchid {
-            position: relative;
             left: 80%;
             top: 60%;
         }

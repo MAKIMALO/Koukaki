@@ -3,18 +3,12 @@ body {
 }
 
 
-/* Fade in Section Banner */
-@import "fadein_animation.scss";
-
-
 /* Rotation des fleurs */
 @import "rotation_flowers.scss";
 
 
+/* Animation du Banner en fade-in */
 /* Animation des titres en fade-in */
-@import "fadein_animation.scss";
-
-
 /* Animation des sections en fade-in */
 @import "fadein_animation.scss";
 
@@ -24,11 +18,8 @@ body {
 
 
 /* Video background banner */
-@import "banner.scss";
-    
-
 /* Effet de flottement sur le titre principal */
-@import "title_header_animation.scss";
+@import "banner.scss";
 
 
 /* Effet de déplacement des nuages */
