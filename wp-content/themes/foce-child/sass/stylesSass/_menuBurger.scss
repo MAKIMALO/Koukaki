@@ -166,9 +166,45 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-&.active {
+.topnav.active {
     top: 0;
     width: 100%;
     height: 100vh;
 }
 
+
+/* Media queries */
+@media (max-width: 950px) {
+    .site-header {
+        .top-site-title {
+            #openBtn {
+                .burger-icon {
+                    left: 87%;
+                    span {
+                        width: 33px;
+                    }
+                }
+            }
+            #closeBtn {
+                left: 87%;
+            }
+        }
+    }
+} 
+
+
+@media (max-width: 750px) {
+    .site-header {
+        .top-site-title {
+            #openBtn {
+                .burger-icon {
+                    left: 87%;
+                    span {
+                        width: 30px;
+                        height: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

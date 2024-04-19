@@ -3,98 +3,6 @@ body {
   height: auto !important;
 }
 
-/* Fade in Section Banner */
-/* Fade in Section Banner */
-@keyframes fadein_banner {
-  0% {
-    opacity: 0;
-    transform: translateY(-40%);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadein_logo {
-  0% {
-    opacity: 0;
-    transform: translateY(40%);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.banner {
-  animation: fadein_banner 3s;
-  width: 100%;
-}
-.banner .logo_fade_in {
-  animation: fadein_logo 2s;
-}
-
-/* Animation des titres en fade-in */
-.anim_title_1,
-.anim_title_2 {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.title_animate_1,
-.title_animate_2 {
-  display: inline-block;
-  position: relative;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.title_animate_1 {
-  animation: fade_in_title_animate_1 1.5s ease-in-out;
-}
-
-.title_animate_2 {
-  animation: fade_in_title_animate_2 1.5s ease-in-out;
-}
-
-@keyframes fade_in_title_animate_1 {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade_in_title_animate_2 {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/* Animation des sections en fade-in */
-.anim_article {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.article_animate {
-  animation: fade_in_article_animate 2s ease-in-out forwards;
-}
-
-@keyframes fade_in_article_animate {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 /* Rotation des fleurs */
 /* Rotation des fleurs */
 @keyframes rotate_flowers {
@@ -115,98 +23,8 @@ h2::after,
   line-height: 0;
 }
 
+/* Animation du Banner en fade-in */
 /* Animation des titres en fade-in */
-/* Fade in Section Banner */
-@keyframes fadein_banner {
-  0% {
-    opacity: 0;
-    transform: translateY(-40%);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadein_logo {
-  0% {
-    opacity: 0;
-    transform: translateY(40%);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.banner {
-  animation: fadein_banner 3s;
-  width: 100%;
-}
-.banner .logo_fade_in {
-  animation: fadein_logo 2s;
-}
-
-/* Animation des titres en fade-in */
-.anim_title_1,
-.anim_title_2 {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.title_animate_1,
-.title_animate_2 {
-  display: inline-block;
-  position: relative;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.title_animate_1 {
-  animation: fade_in_title_animate_1 1.5s ease-in-out;
-}
-
-.title_animate_2 {
-  animation: fade_in_title_animate_2 1.5s ease-in-out;
-}
-
-@keyframes fade_in_title_animate_1 {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade_in_title_animate_2 {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/* Animation des sections en fade-in */
-.anim_article {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.article_animate {
-  animation: fade_in_article_animate 2s ease-in-out forwards;
-}
-
-@keyframes fade_in_article_animate {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 /* Animation des sections en fade-in */
 /* Fade in Section Banner */
 @keyframes fadein_banner {
@@ -314,13 +132,14 @@ h2::after,
   width: 100%;
   overflow: hidden;
 }
-#oscars .oscars_flowers .image_sunflower {
+#oscars .oscars_flowers > img {
   position: relative;
+}
+#oscars .oscars_flowers .image_sunflower {
   left: 8%;
   top: 20%;
 }
 #oscars .oscars_flowers .image_orchid {
-  position: relative;
   left: 80%;
   top: 60%;
 }
@@ -351,10 +170,15 @@ h2::after,
 }
 
 /* Video background banner */
+/* Effet de flottement sur le titre principal */
 /* Video background banner */
 .banner {
   background-image: none;
   min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .banner .background_video {
   position: relative;
@@ -374,11 +198,11 @@ h2::after,
 }
 .banner .img_logo_parralax .img_logo {
   width: 100%;
+  height: auto;
   position: relative;
   animation: float_title ease-in-out 3s infinite;
 }
 
-/* Effet de flottement sur le titre principal */
 /* Effet de flottement sur le titre principal */
 @keyframes float_title {
   0% {
@@ -394,6 +218,43 @@ h2::after,
     transform: translate(1%, 1%);
   }
 }
+/* Media queries */
+@media (max-width: 1200px) {
+  .banner .img_logo_parralax .img_logo {
+    width: 90%;
+    left: 10%;
+  }
+}
+@media (max-width: 1024px) {
+  .banner .background_video {
+    display: none;
+  }
+  .banner .background_img {
+    display: flex;
+  }
+  .banner .img_logo_parralax .img_logo {
+    width: 80%;
+    left: 12%;
+  }
+}
+@media (max-width: 950px) {
+  .banner .img_logo_parralax .img_logo {
+    width: 70%;
+    left: 16%;
+  }
+}
+@media (max-width: 850px) {
+  .banner .img_logo_parralax .img_logo {
+    width: 60%;
+    left: 19%;
+  }
+}
+@media (max-width: 750px) {
+  .banner .img_logo_parralax .img_logo {
+    width: 50%;
+    left: 23%;
+  }
+}
 /* Effet de déplacement des nuages */
 /* Effet de déplacement des nuages */
 .story #place {
@@ -402,55 +263,56 @@ h2::after,
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: auto;
 }
 .story .background_img_place {
   display: flex;
   width: 100%;
-  min-height: 699px;
+  height: auto;
   background-size: cover;
   position: relative;
   z-index: -1;
 }
 .story .place_nuages {
   display: flex;
-  max-width: 1440px !important;
+  max-width: 100% !important;
   flex-direction: row !important;
   overflow: hidden;
 }
 .story .place_nuages .place_text {
   position: absolute;
   z-index: 1;
-  max-width: 580px;
-  left: 30px;
-  top: 170px;
+  max-width: 42%;
+  left: 2%;
+  top: 25%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 6em;
+  margin-left: 8%;
 }
 .story .place_nuages .place_text p {
-  padding-top: 20px;
-  margin-left: 13px;
+  font-size: calc(1vw + 0.5px);
+  line-height: 1.8;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+.story .place_nuages > img {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .story .place_nuages .little_cloud {
-  position: absolute;
   width: 142px;
   height: 55px;
   left: 50%;
   top: 30%;
-  filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  z-index: 1;
-  overflow: hidden;
 }
 .story .place_nuages .big_cloud {
-  position: absolute;
   width: 316px;
   height: 122px;
   left: 60%;
   top: 10%;
-  filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  z-index: 1;
-  overflow: hidden;
 }
 
 /* Carrousel personnages */
@@ -467,31 +329,30 @@ h2::after,
 .main-character {
   width: 100%;
 }
-
 .main-character h3 {
   text-align: left;
   background-position: left;
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 .swiper {
   justify-content: center;
   width: 100%;
-  height: 450px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 .swiper .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: auto;
+  text-align: center;
 }
 .swiper .swiper-slide img {
-  display: block;
-  width: 400px;
-  height: 440px;
+  width: 100%;
+  height: auto;
 }
 
 #studio {
@@ -666,4 +527,26 @@ a:-webkit-any-link {
   top: 0;
   width: 100%;
   height: 100vh;
+}
+
+/* Media queries */
+@media (max-width: 950px) {
+  .site-header .top-site-title #openBtn .burger-icon {
+    left: 87%;
+  }
+  .site-header .top-site-title #openBtn .burger-icon span {
+    width: 33px;
+  }
+  .site-header .top-site-title #closeBtn {
+    left: 87%;
+  }
+}
+@media (max-width: 750px) {
+  .site-header .top-site-title #openBtn .burger-icon {
+    left: 87%;
+  }
+  .site-header .top-site-title #openBtn .burger-icon span {
+    width: 30px;
+    height: 4px;
+  }
 }/*# sourceMappingURL=theme.css.map */

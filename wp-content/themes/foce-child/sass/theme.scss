@@ -4,31 +4,31 @@ body {
 
 
 /* Rotation des fleurs */
-@import "rotation_flowers.scss";
+@import "stylesSass/_rotation_flowers";
 
 
 /* Animation du Banner en fade-in */
 /* Animation des titres en fade-in */
 /* Animation des sections en fade-in */
-@import "fadein_animation.scss";
+@import "stylesSass/_fadein_animation";
 
 
 /* Section Oscars */
-@import "oscars.scss";
+@import "stylesSass/_oscars";
 
 
 /* Video background banner */
 /* Effet de flottement sur le titre principal */
-@import "banner.scss";
+@import "stylesSass/_banner";
 
 
 /* Effet de déplacement des nuages */
-@import "cloud_animation.scss";
+@import "stylesSass/_cloud_animation";
 
 
 /* Carrousel personnages */
-@import "carrousel.scss";
+@import "stylesSass/_carrousel";
 
 
 /* Header burger menu */
-@import "menuBurger.scss";
+@import "stylesSass/_menuBurger";
