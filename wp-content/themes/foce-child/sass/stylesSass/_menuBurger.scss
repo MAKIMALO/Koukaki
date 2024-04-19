@@ -175,36 +175,33 @@ a:-webkit-any-link {
 
 /* Media queries */
 @media (max-width: 950px) {
-    .site-header {
-        .top-site-title {
-            #openBtn {
-                .burger-icon {
-                    left: 87%;
-                    span {
-                        width: 33px;
-                    }
-                }
+    .site-header .top-site-title {
+        #openBtn .burger-icon {
+            left: 87%;
+            span {
+                width: 33px;
             }
-            #closeBtn {
-                left: 87%;
+        }
+        #closeBtn {
+            left: 87%;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .site-header .top-site-title {
+        #openBtn .burger-icon {
+            left: 87%;
+            span {
+                width: 30px;
+                height: 4px;
             }
         }
     }
-} 
+}
 
-
-@media (max-width: 750px) {
+@media (max-width: 600px) {
     .site-header {
-        .top-site-title {
-            #openBtn {
-                .burger-icon {
-                    left: 87%;
-                    span {
-                        width: 30px;
-                        height: 4px;
-                    }
-                }
-            }
-        }
+        top: 0px;
     }
 }

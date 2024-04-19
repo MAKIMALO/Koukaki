@@ -257,64 +257,75 @@ h2::after,
 }
 /* Effet de déplacement des nuages */
 /* Effet de déplacement des nuages */
+.story {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
 .story #place {
   background-image: none;
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
+  height: auto !important;
 }
-.story .background_img_place {
-  display: flex;
+.story #place .background_img_place {
+  display: block;
   width: 100%;
   height: auto;
   background-size: cover;
   position: relative;
   z-index: -1;
 }
-.story .place_nuages {
-  display: flex;
-  max-width: 100% !important;
-  flex-direction: row !important;
-  overflow: hidden;
-}
-.story .place_nuages .place_text {
+.story #place .cloud img {
   position: absolute;
   z-index: 1;
-  max-width: 42%;
-  left: 2%;
-  top: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 8%;
-}
-.story .place_nuages .place_text p {
-  font-size: calc(1vw + 0.5px);
-  line-height: 1.8;
-  padding-top: 2%;
-  padding-left: 2%;
-}
-.story .place_nuages > img {
-  position: absolute;
-  z-index: 1;
-  overflow: hidden;
+  max-height: 300px;
   filter: blur(13px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.story .place_nuages .little_cloud {
-  width: 142px;
-  height: 55px;
+.story #place .little_cloud {
+  width: 10%;
   left: 50%;
   top: 30%;
 }
-.story .place_nuages .big_cloud {
-  width: 316px;
-  height: 122px;
+.story #place .big_cloud {
+  width: 20%;
   left: 60%;
   top: 10%;
 }
+.story #place .place_text_nuages {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.story #place .place_text_nuages p {
+  font-size: calc(1vw + 0.5px);
+  line-height: 1.8;
+}
 
+/* Media queries */
+@media (max-width: 1200px) {
+  .story #place .place_text_nuages {
+    top: 20%;
+  }
+}
+@media (max-width: 1024px) {
+  .story #place .place_text_nuages {
+    top: 15%;
+  }
+}
+@media (max-width: 950px) {
+  .story #place .place_text_nuages {
+    width: 55%;
+    top: 10%;
+  }
+}
 /* Carrousel personnages */
 /* Carrousel personnages */
 .story #characters {
@@ -548,5 +559,10 @@ a:-webkit-any-link {
   .site-header .top-site-title #openBtn .burger-icon span {
     width: 30px;
     height: 4px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header {
+    top: 0px;
   }
 }/*# sourceMappingURL=theme.css.map */

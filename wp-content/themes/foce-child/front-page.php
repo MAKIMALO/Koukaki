@@ -83,18 +83,18 @@ get_header();
                     $background_img_nuage2 = get_stylesheet_directory_uri() . "/assets/images/big_cloud.png";
                 ?>
                 <img class="background_img_place" src="<?php echo $background_img_place ?>" type="image" alt="Image de fond colorée">
-                <div class="place_nuages">
-                    <div class="place_text">
+                <div class="cloud">
+                    <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"
+                    style="position: absolute" data-center-top="left:750px; transform:translateX(300px);" data-top="left:1050px; transform:translateX(-600px);">
+                    <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages"
+                    style="position: absolute" data-center-top="left:1050px; transform:translateX(300px);" data-top="left:1350px; transform:translateX(-600px);">
+                </div>
+                <div class="place_text_nuages">
                         <h3>
                             <span class="anim_title_1">Le</spans>
                             <span class="anim_title_2">Lieu</span>
                         </h3>
                         <p><?php echo get_theme_mod('place'); ?></p>
-                    </div>
-                    <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"
-                    style="position: absolute" data-center-top="left:750px; transform:translateX(300px);" data-top="left:1050px; transform:translateX(-600px);">
-                    <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages"
-                    style="position: absolute" data-center-top="left:1050px; transform:translateX(300px);" data-top="left:1350px; transform:translateX(-600px);">
                 </div>
             </article>
 

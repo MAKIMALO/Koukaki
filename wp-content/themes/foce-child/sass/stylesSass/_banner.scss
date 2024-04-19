@@ -51,13 +51,11 @@
 
 /* Media queries */
 @media (max-width: 1200px) {
-    .banner {
-        .img_logo_parralax {
-            .img_logo {
-                width: 90%;
-                left: 10%;
-            } 
-        }
+    .banner .img_logo_parralax {
+        .img_logo {
+            width: 90%;
+            left: 10%;
+        } 
     }
 }
 
@@ -79,34 +77,29 @@
 }
 
 @media (max-width: 950px) {
-    .banner {
-        .img_logo_parralax {
-            .img_logo {
-                width: 70%;
-                left: 16%;
-            } 
-        }
+    .banner .img_logo_parralax {
+        .img_logo {
+            width: 70%;
+            left: 16%;
+        } 
     }
 }
 
 @media (max-width: 850px) {
-    .banner {
-        .img_logo_parralax {
-            .img_logo {
-                width: 60%;
-                left: 19%;
-            } 
-        }
+    .banner .img_logo_parralax {
+        .img_logo {
+            width: 60%;
+            left: 19%;
+        } 
     }
 }
 
 @media (max-width: 750px) {
-    .banner {
-        .img_logo_parralax {
-            .img_logo {
-                width: 50%;
-                left: 23%;
-            } 
+    .banner .img_logo_parralax {
+        .img_logo {
+            width: 50%;
+            left: 23%;
         }
     }
 }
+
