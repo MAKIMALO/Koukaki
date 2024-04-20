@@ -123,13 +123,13 @@ h2::after,
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 20px;
   overflow: hidden;
 }
 #oscars .oscars_flowers {
   display: flex;
   flex-direction: row;
   width: 100%;
+  position: relative;
   overflow: hidden;
 }
 #oscars .oscars_flowers > img {
@@ -147,21 +147,27 @@ h2::after,
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 400px !important;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  gap: 1%;
+}
+#oscars .nomination .text_nomination {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 52%;
+  z-index: 1;
 }
 #oscars .nomination .text_nomination p {
   font-weight: 700;
   font-family: "Quicksand";
-  font-size: 40px;
+  font-size: calc(1rem + 1.5vw);
   color: #FFF5E9;
-  line-height: 52.5px;
-  position: relative;
-  bottom: 265px;
-  margin-left: 80px;
+  line-height: 1.5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#oscars .nomination .logo_nomination {
-  padding-top: 40px;
+  padding-left: 9%;
 }
 
 .site-footer::before,
@@ -169,6 +175,17 @@ h2::after,
   display: none;
 }
 
+/* Media queries */
+@media (max-width: 1024px) {
+  #oscars .nomination .text_nomination > p {
+    font-size: calc(1rem + 1.2vw);
+  }
+}
+@media (max-width: 850px) {
+  #oscars .nomination .text_nomination {
+    width: 48%;
+  }
+}
 /* Video background banner */
 /* Effet de flottement sur le titre principal */
 /* Video background banner */
@@ -268,7 +285,7 @@ h2::after,
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto !important;
+  min-height: auto;
 }
 .story #place .background_img_place {
   display: block;
@@ -305,7 +322,7 @@ h2::after,
   align-items: flex-start;
 }
 .story #place .place_text_nuages p {
-  font-size: calc(1vw + 0.5px);
+  font-size: calc(1vw + 0.7px);
   line-height: 1.8;
 }
 
