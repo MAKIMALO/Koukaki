@@ -71,12 +71,24 @@
 @media (max-width: 850px) {
     #oscars .nomination {
         .text_nomination {
-            width: 48%;
+            width: 60%;
+            > p {
+                font-size: calc(1rem + 1.2vw);
+            }
         }
     }
 }
 
-@media (max-width: 750px) {
-  
+@media (max-width: 700px) {
+    #oscars .nomination {
+        display: flex;
+        flex-direction: column;
+        .text_nomination {
+            width: 65%;
+            > p {
+                font-size: calc(1rem + 1.2vw);
+            }
+        }
+    }
 }
 
