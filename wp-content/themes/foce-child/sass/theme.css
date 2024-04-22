@@ -5,6 +5,10 @@ body {
 
 /* Rotation des fleurs */
 /* Rotation des fleurs */
+:root {
+  --rotation-speed: 20s;
+}
+
 @keyframes rotate_flowers {
   from {
     transform: rotate(0deg);
@@ -19,7 +23,7 @@ h2::after,
 .image_sunflower,
 .image_orchid,
 .site-footer ul::after {
-  animation: rotate_flowers 20s linear infinite;
+  animation: rotate_flowers var(--rotation-speed) linear infinite;
   line-height: 0;
 }
 

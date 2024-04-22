@@ -22,7 +22,7 @@
         
         // Enqueue fadein animation script
         wp_enqueue_script( 'fadein-animation-script', get_stylesheet_directory_uri() . '/js/fadein_animation.js', array('jquery'), '1.2', true );
-    
+
         // Enqueue skrollr script
         wp_enqueue_script( 'skrollr-script', get_stylesheet_directory_uri() . '/js/skrollr.min.js', array(), '5.4.5', true );
     }
