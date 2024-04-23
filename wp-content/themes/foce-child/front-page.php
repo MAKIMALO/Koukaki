@@ -50,7 +50,7 @@ get_header();
                         <span class="anim_title_2">personnages</span>
                     </h3>
                     <?php get_template_part( 'template-parts/slider' ); ?>
-                    <!-- <?php
+                    <!-- Slider personnages - slider.php <?php
                     $main_character = $characters_query->posts[0];
                     echo '<figure>';
                     echo get_the_post_thumbnail( $main_character->ID, 'full' );
@@ -85,9 +85,9 @@ get_header();
                 <img class="background_img_place" src="<?php echo $background_img_place ?>" type="image" alt="Image de fond colorée">
                 <div class="cloud">
                     <img class="little_cloud" src="<?php echo $background_img_nuage1 ?>" type="image" alt="Image de petits nuages"
-                    style="position: absolute" data-center-top="left:750px; transform:translateX(300px);" data-top="left:1050px; transform:translateX(-600px);">
+                    style="position: absolute" data-center-top="left:770px; transform:translateX(300px);" data-top="left:1070px; transform:translateX(-600px);">
                     <img class="big_cloud" src="<?php echo $background_img_nuage2 ?>" type="image" alt="Image de gros nuages"
-                    style="position: absolute" data-center-top="left:1050px; transform:translateX(300px);" data-top="left:1350px; transform:translateX(-600px);">
+                    style="position: absolute" data-center-top="left:1070px; transform:translateX(300px);" data-top="left:1370px; transform:translateX(-600px);">
                 </div>
                 <div class="place_text_nuages">
                         <h3>

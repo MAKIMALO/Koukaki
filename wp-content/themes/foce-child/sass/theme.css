@@ -161,7 +161,7 @@ h2::after,
   position: relative;
   background-size: cover;
   background-position: center;
-  width: 52%;
+  width: 40%;
   z-index: 1;
 }
 #oscars .nomination .text_nomination p {
