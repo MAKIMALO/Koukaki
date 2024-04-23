@@ -59,7 +59,7 @@ get_header();
                     $characters_query->next_post();
                     ?> -->   
                 </div>
-            <!--
+            <!-- Slider personnages - slider.php
                 <div class="other-characters">
                     /* <?php
                     while ( $characters_query->have_posts() ) {
