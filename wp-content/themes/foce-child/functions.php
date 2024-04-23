@@ -14,13 +14,13 @@
     add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
     function theme_enqueue_scripts() {
         // Enqueue burger script
-        wp_enqueue_script( 'burger-script', get_stylesheet_directory_uri() . '/js/burger.js', array('jquery'), '1.2', true );
+        wp_enqueue_script( 'burger-script', get_stylesheet_directory_uri() . '/js/burger.js', array(), '1.2', true );
         
         // Enqueue swiper script
-        wp_enqueue_script( 'swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), '11.0.5', true);
+        wp_enqueue_script( 'swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '11.0.5', true);
         
         // Enqueue fadein animation script
-        wp_enqueue_script( 'fadein-animation-script', get_stylesheet_directory_uri() . '/js/fadein_animation.js', array('jquery'), '1.2', true );
+        wp_enqueue_script( 'fadein-animation-script', get_stylesheet_directory_uri() . '/js/fadein_animation.js', array(), '1.2', true );
 
         // Enqueue skrollr script
         wp_enqueue_script( 'skrollr-script', get_stylesheet_directory_uri() . '/js/skrollr.min.js', array(), '5.4.5', true );
