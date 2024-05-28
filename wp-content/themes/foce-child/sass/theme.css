@@ -424,7 +424,7 @@ h2::after,
 /* Header burger menu */
 .site-header {
   width: 100%;
-  top: 30px;
+  top: 0px;
 }
 .site-header .top-site-title {
   width: 100%;
